@@ -25,7 +25,7 @@ struct habit_pal_iosApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HabitsView()
         }
         .modelContainer(sharedModelContainer)
     }
