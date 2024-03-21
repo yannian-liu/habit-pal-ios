@@ -49,7 +49,7 @@ struct HabitsView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Habit(id: 0, title: "hahaha", color: "FFFFFF")
+            let newItem = Habit(id: 0, title: "hahaha", emoji: "🇺🇸", color: "FFFFFF")
             modelContext.insert(newItem)
         }
     }
