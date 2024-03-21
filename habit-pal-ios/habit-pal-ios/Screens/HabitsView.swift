@@ -25,6 +25,7 @@ struct HabitsView: View {
                 Spacer().frame(width: 16)
                 StatableButtonView(configuration: viewModel.addButton)
             }
+            
             NavigationSplitView {
                 List {
                     ForEach(habits) { habit in
@@ -52,7 +53,7 @@ struct HabitsView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Habit(id: 0, title: "hahaha", emoji: "🇺🇸", color: "FFFFFF")
+            let newItem = Habit(id: 0, groupId: 1, title: "hahaha", emoji: "🇺🇸", color: "FFFFFF")
             modelContext.insert(newItem)
         }
     }

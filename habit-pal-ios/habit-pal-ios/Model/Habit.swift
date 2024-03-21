@@ -12,14 +12,16 @@ import SwiftUI
 @Model
 final class Habit {
     @Attribute(.unique) var id: Int
+    @Attribute var groupId: Int
     var title: String
     var emoji: String
     var color: String
 
-    init(id: Int, title: String, emoji: Character, color: String) {
+    init(id: Int, groupId: Int, title: String, emoji: String, color: String) {
         self.id = id
+        self.groupId = groupId
         self.title = title
-        self.emoji = String(emoji).code
+        self.emoji = emoji.code
         self.color = color
     }
 }

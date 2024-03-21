@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BB1028982BAC501D00C17BA5 /* String+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1028972BAC501D00C17BA5 /* String+Emoji.swift */; };
 		BB10289A2BAC579A00C17BA5 /* String+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1028992BAC579A00C17BA5 /* String+Font.swift */; };
+		BB10289C2BAC5D9D00C17BA5 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10289B2BAC5D9D00C17BA5 /* Group.swift */; };
 		BB3C78362BAB381600D49B3E /* habit_pal_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78352BAB381600D49B3E /* habit_pal_iosApp.swift */; };
 		BB3C78382BAB381600D49B3E /* HabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78372BAB381600D49B3E /* HabitsView.swift */; };
 		BB3C783A2BAB381600D49B3E /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78392BAB381600D49B3E /* Habit.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		BB1028972BAC501D00C17BA5 /* String+Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Emoji.swift"; sourceTree = "<group>"; };
 		BB1028992BAC579A00C17BA5 /* String+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Font.swift"; sourceTree = "<group>"; };
+		BB10289B2BAC5D9D00C17BA5 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		BB3C78322BAB381600D49B3E /* habit-pal-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "habit-pal-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3C78352BAB381600D49B3E /* habit_pal_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosApp.swift; sourceTree = "<group>"; };
 		BB3C78372BAB381600D49B3E /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		BBB3E2A22BAC450400257FEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BB10289B2BAC5D9D00C17BA5 /* Group.swift */,
 				BB3C78392BAB381600D49B3E /* Habit.swift */,
 			);
 			path = Model;
@@ -321,6 +324,7 @@
 				BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */,
 				BB3C78382BAB381600D49B3E /* HabitsView.swift in Sources */,
 				BBB3E2A72BAC458B00257FEC /* StatableButtonViewDisplay+Extension.swift in Sources */,
+				BB10289C2BAC5D9D00C17BA5 /* Group.swift in Sources */,
 				BB1028982BAC501D00C17BA5 /* String+Emoji.swift in Sources */,
 				BB3C783A2BAB381600D49B3E /* Habit.swift in Sources */,
 				BB3C78362BAB381600D49B3E /* habit_pal_iosApp.swift in Sources */,
