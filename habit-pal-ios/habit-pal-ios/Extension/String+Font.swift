@@ -16,6 +16,8 @@ extension String {
         static let avenirBookOblique = "Avenir-BookOblique"
         static let avenirOblique = "Avenir-Oblique"
         static let avenirMedium = "Avenir-Medium"
+        static let avenirMediumOblique = "Avenir-MediumOblique"
+        static let avenirHeavy = "Avenir-Heavy"
         static let avenirHeavyOblique = "Avenir-HeavyOblique"
         static let avenirBlack = "Avenir-Black"
         static let avenirBlackOblique = "Avenir-BlackOblique"
