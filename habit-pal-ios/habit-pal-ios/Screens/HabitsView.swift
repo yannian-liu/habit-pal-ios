@@ -17,6 +17,9 @@ struct HabitsView: View {
     var body: some View {
         ScrollView {
             HStack {
+                Text("Today is 3rd May")
+                    .font(.custom(.FontName.avenirBlack, size: 16))
+                    .foregroundStyle(.navyBlue)
                 Spacer()
                 StatableButtonView(configuration: viewModel.editButton)
                 Spacer().frame(width: 16)
