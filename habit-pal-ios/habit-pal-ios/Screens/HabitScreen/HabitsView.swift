@@ -20,7 +20,7 @@ struct HabitsView: View {
                 HStack {
                     TextView(textConfiguration: viewModel.todayTextConfiguration)
                     Spacer()
-                    StatableButtonView(configuration: viewModel.editButton)
+                    StatableButtonView(configuration: viewModel.settingsButton)
                     Spacer().frame(width: 16)
                     StatableButtonView(configuration: viewModel.addButton)
                 }
