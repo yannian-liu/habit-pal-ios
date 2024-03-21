@@ -13,13 +13,11 @@ import SwiftUI
 final class Habit {
     @Attribute(.unique) var id: Int
     var title: String
-    var emoji: Character
     var color: String
 
-    init(id: Int, title: String, emoji: Character, color: String) {
+    init(id: Int, title: String, color: String) {
         self.id = id
         self.title = title
-        self.emoji = emoji
         self.color = color
     }
 }

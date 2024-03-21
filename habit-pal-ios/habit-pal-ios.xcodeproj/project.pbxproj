@@ -16,6 +16,8 @@
 		BB3C78532BAB381700D49B3E /* habit_pal_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78522BAB381700D49B3E /* habit_pal_iosUITests.swift */; };
 		BB3C78552BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78542BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift */; };
 		BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */; };
+		BBB3E29F2BAC40F700257FEC /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = BBB3E29E2BAC40F700257FEC /* UIToolbox */; };
+		BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		BB3C78522BAB381700D49B3E /* habit_pal_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosUITests.swift; sourceTree = "<group>"; };
 		BB3C78542BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB3E29F2BAC40F700257FEC /* UIToolbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +86,7 @@
 				BB3C78472BAB381700D49B3E /* habit-pal-iosTests */,
 				BB3C78512BAB381700D49B3E /* habit-pal-iosUITests */,
 				BB3C78332BAB381600D49B3E /* Products */,
+				BBB3E29D2BAC40F700257FEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +105,7 @@
 			children = (
 				BB3C78352BAB381600D49B3E /* habit_pal_iosApp.swift */,
 				BB3C78372BAB381600D49B3E /* HabitsView.swift */,
+				BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */,
 				BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */,
 				BB3C78392BAB381600D49B3E /* Habit.swift */,
 				BB3C783B2BAB381700D49B3E /* Assets.xcassets */,
@@ -133,6 +139,13 @@
 			path = "habit-pal-iosUITests";
 			sourceTree = "<group>";
 		};
+		BBB3E29D2BAC40F700257FEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +162,9 @@
 			dependencies = (
 			);
 			name = "habit-pal-ios";
+			packageProductDependencies = (
+				BBB3E29E2BAC40F700257FEC /* UIToolbox */,
+			);
 			productName = "habit-pal-ios";
 			productReference = BB3C78322BAB381600D49B3E /* habit-pal-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +237,9 @@
 				Base,
 			);
 			mainGroup = BB3C78292BAB381600D49B3E;
+			packageReferences = (
+				BBB3E29C2BAC40D100257FEC /* XCRemoteSwiftPackageReference "ios-ui-toolbox" */,
+			);
 			productRefGroup = BB3C78332BAB381600D49B3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */,
 				BB3C78382BAB381600D49B3E /* HabitsView.swift in Sources */,
 				BB3C783A2BAB381600D49B3E /* Habit.swift in Sources */,
 				BB3C78362BAB381600D49B3E /* habit_pal_iosApp.swift in Sources */,
@@ -596,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBB3E29C2BAC40D100257FEC /* XCRemoteSwiftPackageReference "ios-ui-toolbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yannian-liu/ios-ui-toolbox/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBB3E29E2BAC40F700257FEC /* UIToolbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBB3E29C2BAC40D100257FEC /* XCRemoteSwiftPackageReference "ios-ui-toolbox" */;
+			productName = UIToolbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB3C782A2BAB381600D49B3E /* Project object */;
 }

@@ -7,12 +7,18 @@
 
 import SwiftUI
 import SwiftData
+import UIToolbox
 
 struct HabitsView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var habits: [Habit]
+    @ObservedObject private var viewModel = HabitsViewModel()
 
     var body: some View {
+        HStack {
+            Spacer()
+            StatableButtonView(configuration: viewModel.addButton)
+        }
         NavigationSplitView {
             List {
                 ForEach(habits) { habit in
@@ -28,11 +34,7 @@ struct HabitsView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+                
             }
         } detail: {
             Text("Select an item")
@@ -41,7 +43,7 @@ struct HabitsView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Habit(id: 0, title: "hahaha", emoji: "🇺🇸", color: "FFFFFF")
+            let newItem = Habit(id: 0, title: "hahaha", color: "FFFFFF")
             modelContext.insert(newItem)
         }
     }

@@ -1,0 +1,15 @@
+{
+  "originHash" : "023cb5139d8e42e132310434ae8463c63d0dcf1cea3c70b0d0910c9cbc6aad35",
+  "pins" : [
+    {
+      "identity" : "ios-ui-toolbox",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yannian-liu/ios-ui-toolbox/",
+      "state" : {
+        "branch" : "main",
+        "revision" : "676abb1b9e4bbe8d0df45eb5b38044190b0e47aa"
+      }
+    }
+  ],
+  "version" : 3
+}
