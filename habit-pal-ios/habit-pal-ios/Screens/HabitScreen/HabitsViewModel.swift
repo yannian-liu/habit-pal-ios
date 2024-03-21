@@ -11,14 +11,16 @@ import UIToolbox
 import SwiftUI
 
 class HabitsViewModel: ObservableObject {
-    public let addButton = StatableButtonViewConfiguration(
+    @Published public var shouldShowAddNewHabitView = false
+    
+    public lazy var addButton = StatableButtonViewConfiguration(
         content: Image("appPlus"),
         activeDisplay: .roundImageButton,
         disabledDisplay: nil,
         highlightedDisplay: nil,
         animation: .scale,
         statePublisher: nil,
-        action:{}
+        action:{ [unowned self] in shouldShowAddNewHabitView.toggle() }
     )
     
     public let editButton = StatableButtonViewConfiguration(
