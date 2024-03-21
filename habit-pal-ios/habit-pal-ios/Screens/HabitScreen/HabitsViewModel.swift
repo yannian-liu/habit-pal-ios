@@ -13,6 +13,8 @@ import SwiftUI
 class HabitsViewModel: ObservableObject {
     @Published public var shouldShowAddNewHabitView = false
     
+    public lazy var todayTextConfiguration = TextConfiguration(title: "Today is 22nd May", scriptConfiguration: .init(font: .custom(.FontName.avenirBlack, size: 14), color: .navyBlue, multilineTextAlignment: .leading), frameConfiguration: nil)
+    
     public lazy var addButton = StatableButtonViewConfiguration(
         content: Image("appPlus"),
         activeDisplay: .roundImageButton,
