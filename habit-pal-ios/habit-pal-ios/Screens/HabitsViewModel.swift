@@ -12,8 +12,18 @@ import SwiftUI
 
 class HabitsViewModel: ObservableObject {
     public let addButton = StatableButtonViewConfiguration(
-        content: Image("plus"),
-        activeDisplay: .init(font: .headline, foregroundColor: .white, backgroundColor: .mediumOrange, sizeStyle: .paddingDefault, shape: .circle, border: nil),
+        content: Image("appPlus"),
+        activeDisplay: .roundImageButton,
+        disabledDisplay: nil,
+        highlightedDisplay: nil,
+        animation: .scale,
+        statePublisher: nil,
+        action:{}
+    )
+    
+    public let editButton = StatableButtonViewConfiguration(
+        content: Image("pencil"),
+        activeDisplay: .roundImageButton,
         disabledDisplay: nil,
         highlightedDisplay: nil,
         animation: .scale,

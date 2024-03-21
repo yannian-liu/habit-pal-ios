@@ -18,6 +18,8 @@
 		BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */; };
 		BBB3E29F2BAC40F700257FEC /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = BBB3E29E2BAC40F700257FEC /* UIToolbox */; };
 		BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */; };
+		BBB3E2A52BAC452500257FEC /* Border+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A42BAC452500257FEC /* Border+Extension.swift */; };
+		BBB3E2A72BAC458B00257FEC /* StatableButtonViewDisplay+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A62BAC458B00257FEC /* StatableButtonViewDisplay+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		BB3C78542BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
+		BBB3E2A42BAC452500257FEC /* Border+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Border+Extension.swift"; sourceTree = "<group>"; };
+		BBB3E2A62BAC458B00257FEC /* StatableButtonViewDisplay+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatableButtonViewDisplay+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +107,10 @@
 		BB3C78342BAB381600D49B3E /* habit-pal-ios */ = {
 			isa = PBXGroup;
 			children = (
+				BBB3E2A82BAC462800257FEC /* Screens */,
+				BBB3E2A32BAC450E00257FEC /* Extension */,
+				BBB3E2A22BAC450400257FEC /* Model */,
 				BB3C78352BAB381600D49B3E /* habit_pal_iosApp.swift */,
-				BB3C78372BAB381600D49B3E /* HabitsView.swift */,
-				BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */,
-				BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */,
-				BB3C78392BAB381600D49B3E /* Habit.swift */,
 				BB3C783B2BAB381700D49B3E /* Assets.xcassets */,
 				BB3C783D2BAB381700D49B3E /* Preview Content */,
 			);
@@ -144,6 +147,33 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBB3E2A22BAC450400257FEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB3C78392BAB381600D49B3E /* Habit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBB3E2A32BAC450E00257FEC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */,
+				BBB3E2A42BAC452500257FEC /* Border+Extension.swift */,
+				BBB3E2A62BAC458B00257FEC /* StatableButtonViewDisplay+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BBB3E2A82BAC462800257FEC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BB3C78372BAB381600D49B3E /* HabitsView.swift */,
+				BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +314,11 @@
 			files = (
 				BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */,
 				BB3C78382BAB381600D49B3E /* HabitsView.swift in Sources */,
+				BBB3E2A72BAC458B00257FEC /* StatableButtonViewDisplay+Extension.swift in Sources */,
 				BB3C783A2BAB381600D49B3E /* Habit.swift in Sources */,
 				BB3C78362BAB381600D49B3E /* habit_pal_iosApp.swift in Sources */,
 				BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */,
+				BBB3E2A52BAC452500257FEC /* Border+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
