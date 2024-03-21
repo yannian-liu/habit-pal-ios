@@ -76,3 +76,16 @@ struct HabitsView: View {
     HabitsView()
         .modelContainer(for: Habit.self, inMemory: true)
 }
+
+class MockData {
+    let habits = [
+        Habit(id: 001, groupId: 001, title: "Water", emoji: "💧".code, color: Color.blue.hex),
+        Habit(id: 002, groupId: 001, title: "Milk", emoji: "🍼".code, color: Color.yellow.hex),
+        Habit(id: 003, groupId: 002, title: "Cereal", emoji: "🍚".code, color: Color.red.hex),
+    ]
+    
+    let groups = [
+        Group(id: 001, title: "Morning"),
+        Group(id: 002, title: "Afternoon"),
+    ]
+}
