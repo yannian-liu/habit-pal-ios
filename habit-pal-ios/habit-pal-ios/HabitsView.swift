@@ -17,9 +17,9 @@ struct HabitsView: View {
             List {
                 ForEach(habits) { habit in
                     NavigationLink {
-                        Text("Item at \(habit.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        Text("Item at \(habit.title)")
                     } label: {
-                        Text(habit.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        Text(habit.title)
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -41,7 +41,7 @@ struct HabitsView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Habit(timestamp: Date())
+            let newItem = Habit(id: 0, title: "hahaha", emoji: "🇺🇸", color: "FFFFFF")
             modelContext.insert(newItem)
         }
     }

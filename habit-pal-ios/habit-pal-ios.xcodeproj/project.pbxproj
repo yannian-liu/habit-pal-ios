@@ -15,6 +15,7 @@
 		BB3C78492BAB381700D49B3E /* habit_pal_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78482BAB381700D49B3E /* habit_pal_iosTests.swift */; };
 		BB3C78532BAB381700D49B3E /* habit_pal_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78522BAB381700D49B3E /* habit_pal_iosUITests.swift */; };
 		BB3C78552BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78542BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift */; };
+		BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		BB3C784E2BAB381700D49B3E /* habit-pal-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "habit-pal-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3C78522BAB381700D49B3E /* habit_pal_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosUITests.swift; sourceTree = "<group>"; };
 		BB3C78542BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				BB3C78352BAB381600D49B3E /* habit_pal_iosApp.swift */,
 				BB3C78372BAB381600D49B3E /* HabitsView.swift */,
+				BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */,
 				BB3C78392BAB381600D49B3E /* Habit.swift */,
 				BB3C783B2BAB381700D49B3E /* Assets.xcassets */,
 				BB3C783D2BAB381700D49B3E /* Preview Content */,
@@ -263,6 +266,7 @@
 				BB3C78382BAB381600D49B3E /* HabitsView.swift in Sources */,
 				BB3C783A2BAB381600D49B3E /* Habit.swift in Sources */,
 				BB3C78362BAB381600D49B3E /* habit_pal_iosApp.swift in Sources */,
+				BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

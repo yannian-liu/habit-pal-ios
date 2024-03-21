@@ -7,12 +7,19 @@
 
 import Foundation
 import SwiftData
+import SwiftUI
 
 @Model
 final class Habit {
-    var timestamp: Date
-    
-    init(timestamp: Date) {
-        self.timestamp = timestamp
+    @Attribute(.unique) var id: Int
+    var title: String
+    var emoji: Character
+    var color: String
+
+    init(id: Int, title: String, emoji: Character, color: String) {
+        self.id = id
+        self.title = title
+        self.emoji = emoji
+        self.color = color
     }
 }
