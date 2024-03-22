@@ -23,6 +23,7 @@
 		BB3C78532BAB381700D49B3E /* habit_pal_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78522BAB381700D49B3E /* habit_pal_iosUITests.swift */; };
 		BB3C78552BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78542BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift */; };
 		BB5DC8F32BADA96600859613 /* ScriptConfiguration+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8F22BADA96600859613 /* ScriptConfiguration+App.swift */; };
+		BB5DC8F52BADBD3900859613 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8F42BADBD3900859613 /* ColorScheme.swift */; };
 		BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */; };
 		BBB3E29F2BAC40F700257FEC /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = BBB3E29E2BAC40F700257FEC /* UIToolbox */; };
 		BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */; };
@@ -67,6 +68,7 @@
 		BB3C78522BAB381700D49B3E /* habit_pal_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosUITests.swift; sourceTree = "<group>"; };
 		BB3C78542BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BB5DC8F22BADA96600859613 /* ScriptConfiguration+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScriptConfiguration+App.swift"; sourceTree = "<group>"; };
+		BB5DC8F42BADBD3900859613 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
 		BBB3E2A42BAC452500257FEC /* Border+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Border+Extension.swift"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				BB1028972BAC501D00C17BA5 /* String+Emoji.swift */,
 				BB1028992BAC579A00C17BA5 /* String+Font.swift */,
 				BB5DC8F22BADA96600859613 /* ScriptConfiguration+App.swift */,
+				BB5DC8F42BADBD3900859613 /* ColorScheme.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5DC8F52BADBD3900859613 /* ColorScheme.swift in Sources */,
 				BB1028A02BAC5EE700C17BA5 /* AddNewHabitViewModel.swift in Sources */,
 				BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */,
 				BB3C78382BAB381600D49B3E /* HabitsView.swift in Sources */,

@@ -9,6 +9,16 @@ import SwiftData
 import SwiftUI
 
 extension Color {
+    
+    static func backgroundPrimary(scheme: ColorScheme) -> Color {
+        scheme == .light ? .lightLightBlue : .navyBlue
+    }
+    
+    static func backgroundSecondary(scheme: ColorScheme) -> Color {
+        scheme == .light ? .lightLightBlue : .navyBlue
+    }
+
+    
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0

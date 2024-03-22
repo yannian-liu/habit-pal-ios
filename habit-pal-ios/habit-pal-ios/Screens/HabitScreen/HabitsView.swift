@@ -10,10 +10,11 @@ import SwiftData
 import UIToolbox
 
 struct HabitsView: View {
+    @Environment(\.colorScheme) var colorScheme
     @Environment(\.modelContext) private var modelContext
     @Query private var habits: [Habit]
     @ObservedObject private var viewModel = HabitsViewModel()
-
+    
     var body: some View {
         ScrollView {
             ZStack {
@@ -24,7 +25,7 @@ struct HabitsView: View {
                         .sheet(isPresented: $viewModel.shouldShowSettings) {
                             SettingsView()
                         }
-
+                    
                     Spacer().frame(width: 16)
                     StatableButtonView(configuration: viewModel.addButton)
                 }
@@ -57,8 +58,12 @@ struct HabitsView: View {
             }
         }
         .contentMargins(.all, 16)
-        .background(.lightLightBlue)
+        .background(Color.backgroundPrimary(scheme: colorScheme))
+        .onAppear(perform: {
+            Utilities().overrideDisplayMode()
+        })
     }
+
 
     private func addItem() {
         withAnimation {

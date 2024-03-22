@@ -17,16 +17,17 @@ struct SettingsView: View {
     var body: some View {
         ScrollView {
             HStack {
-                TextView(textConfiguration: viewModel.themeTitle)
+                TextView(textConfiguration: viewModel.colorSchemeTitleConfiguration)
                 Spacer()
             }
             HStack {
                 Spacer().frame(width: 32)
-                SingleSelectionOptionView(configuration: viewModel.themeOptionsView)
+                SingleSelectionOptionView(configuration: viewModel.colorSchemeOptionsViewConfiguration)
                 Spacer()
             }
             
         }
+        .background(Color.backgroundSecondary(scheme: colorScheme))
         .contentMargins(.all, 16)
     }
 }
