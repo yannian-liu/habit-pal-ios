@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import UIToolbox
 
-extension FrameConfiguration.Border {
+extension PlateConfiguration.Border {
     
     static let primary: Self = .init(width: 1, dash: [], color: .navyBlue, gap: 0)
 }

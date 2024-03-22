@@ -12,8 +12,9 @@ import SwiftUI
 
 class HabitsViewModel: ObservableObject {
     @Published public var shouldShowAddNewHabitView = false
-    
-    public lazy var todayTextConfiguration = TextConfiguration(title: "Today is 22nd May", scriptConfiguration: .init(font: .custom(.FontName.avenirMedium, size: 16), color: .navyBlue, multilineTextAlignment: .leading), frameConfiguration: nil)
+    @Published public var shouldShowSettings = false
+
+    public lazy var todayTextConfiguration = TextConfiguration(title: "Today is 22nd May", scriptConfiguration: .body, plateConfiguration: nil)
     
     public lazy var addButton = StatableButtonViewConfiguration(
         content: Image("appPlus"),
@@ -25,14 +26,14 @@ class HabitsViewModel: ObservableObject {
         action:{ [unowned self] in shouldShowAddNewHabitView.toggle() }
     )
     
-    public let settingsButton = StatableButtonViewConfiguration(
+    public lazy var settingsButton = StatableButtonViewConfiguration(
         content: Image("settings"),
         activeDisplay: .roundImageButton,
         disabledDisplay: nil,
         highlightedDisplay: nil,
         animation: .scale,
         statePublisher: nil,
-        action:{}
+        action:{ [unowned self] in shouldShowSettings = true }
     )
 
 }

@@ -21,6 +21,10 @@ struct HabitsView: View {
                     TextView(textConfiguration: viewModel.todayTextConfiguration)
                     Spacer()
                     StatableButtonView(configuration: viewModel.settingsButton)
+                        .sheet(isPresented: $viewModel.shouldShowSettings) {
+                            SettingsView()
+                        }
+
                     Spacer().frame(width: 16)
                     StatableButtonView(configuration: viewModel.addButton)
                 }
