@@ -12,7 +12,7 @@ import UIToolbox
 struct SettingsView: View {
     
     @Environment(\.colorScheme) var colorScheme
-    @ObservedObject var viewModel = SettingsViewModel()
+    @ObservedObject var viewModel: SettingsViewModel
 
     var body: some View {
         ScrollView {
@@ -44,7 +44,9 @@ struct SettingsView_Previews: PreviewProvider {
     @State static var presented = true
 
     static var previews: some View {
-        SettingsView().preferredColorScheme(.light)
-        SettingsView().preferredColorScheme(.dark)
+        SettingsView(viewModel: SettingsViewModel(habitsViewModel: HabitsViewModel()))
+            .preferredColorScheme(.light)
+        SettingsView(viewModel: SettingsViewModel(habitsViewModel: HabitsViewModel()))
+            .preferredColorScheme(.dark)
     }
 }

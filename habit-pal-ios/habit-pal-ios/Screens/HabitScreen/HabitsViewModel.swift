@@ -36,4 +36,7 @@ class HabitsViewModel: ObservableObject {
         action:{ [unowned self] in shouldShowSettings = true }
     )
 
+    var settingsViewModel: SettingsViewModel {
+        .init(habitsViewModel: self)
+    }
 }

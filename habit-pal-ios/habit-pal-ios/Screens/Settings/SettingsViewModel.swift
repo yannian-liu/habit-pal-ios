@@ -14,6 +14,7 @@ class SettingsViewModel: ObservableObject {
     @AppStorage(wrappedValue: 0, UserDefaultsKey.appColorScheme) var appColorSchemeRawValue
     var utilities = Utilities()
     private var cancellables = Set<AnyCancellable>()
+    @ObservedObject private var habitsViewModel: HabitsViewModel
 
     public lazy var navigationTitle = TextConfiguration(title: "Settings", scriptConfiguration: .navigation, plateConfiguration: nil)
     public lazy var closeButton = StatableButtonViewConfiguration(
@@ -23,7 +24,7 @@ class SettingsViewModel: ObservableObject {
         highlightedDisplay: nil,
         animation: .scale,
         statePublisher: nil,
-        action:{ }
+        action: { [unowned self] in habitsViewModel.shouldShowSettings = false }
     )
     
     let colorSchemeTitleConfiguration = TextConfiguration(title: "Color scheme", scriptConfiguration: .header, plateConfiguration: nil)
@@ -38,7 +39,9 @@ class SettingsViewModel: ObservableObject {
         direction: .vertical
     )
 
-    init() {
+    init(habitsViewModel: HabitsViewModel) {
+        self.habitsViewModel = habitsViewModel
+        
         colorSchemeOptionsViewConfiguration.selected = appColorSchemeRawValue
         colorSchemeOptionsViewConfiguration.$selected.compactMap { $0 }.sink { [unowned self] newValue in
             appColorSchemeRawValue = newValue

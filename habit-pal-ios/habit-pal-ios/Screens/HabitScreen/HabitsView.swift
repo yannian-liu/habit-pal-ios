@@ -22,7 +22,7 @@ struct HabitsView: View {
                     Spacer()
                     StatableButtonView(configuration: viewModel.settingsButton)
                         .sheet(isPresented: $viewModel.shouldShowSettings) {
-                            SettingsView()
+                            SettingsView(viewModel: viewModel.settingsViewModel)
                         }
                     
                     Spacer().frame(width: 16)
