@@ -15,6 +15,15 @@ class SettingsViewModel: ObservableObject {
     var utilities = Utilities()
     private var cancellables = Set<AnyCancellable>()
 
+    public lazy var closeButton = StatableButtonViewConfiguration(
+        content: Image("settings"),
+        activeDisplay: .secondaryRoundImageButton,
+        disabledDisplay: nil,
+        highlightedDisplay: nil,
+        animation: .scale,
+        statePublisher: nil,
+        action:{ }
+    )
     
     let colorSchemeTitleConfiguration = TextConfiguration(title: "Color scheme", scriptConfiguration: .header, plateConfiguration: nil)
     

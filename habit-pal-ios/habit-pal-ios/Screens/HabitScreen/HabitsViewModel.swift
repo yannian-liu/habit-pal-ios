@@ -18,7 +18,7 @@ class HabitsViewModel: ObservableObject {
     
     public lazy var addButton = StatableButtonViewConfiguration(
         content: Image("appPlus"),
-        activeDisplay: .roundImageButton,
+        activeDisplay: .primaryRoundImageButton,
         disabledDisplay: nil,
         highlightedDisplay: nil,
         animation: .scale,
@@ -28,7 +28,7 @@ class HabitsViewModel: ObservableObject {
     
     public lazy var settingsButton = StatableButtonViewConfiguration(
         content: Image("settings"),
-        activeDisplay: .roundImageButton,
+        activeDisplay: .primaryRoundImageButton,
         disabledDisplay: nil,
         highlightedDisplay: nil,
         animation: .scale,

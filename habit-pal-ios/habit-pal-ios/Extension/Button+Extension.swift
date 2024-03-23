@@ -11,9 +11,14 @@ import UIToolbox
 
 extension StatableButtonViewConfiguration<Image>.Display {
     
-    static let roundImageButton: Self = .init(
+    static let primaryRoundImageButton: Self = .init(
         scriptConfiguration: .init(font: .headline, color: .buttonPrimaryForeground, multilineTextAlignment: .leading),
         plateConfiguration: .init(sizeStyle: .paddingDefault, backgroundColor: .buttonPrimaryBackground, shape: .circle, border: nil)
+    )
+    
+    static let secondaryRoundImageButton: Self = .init(
+        scriptConfiguration: .init(font: .headline, color: .buttonSecondaryForeground, multilineTextAlignment: .leading),
+        plateConfiguration: .init(sizeStyle: .paddingDefault, backgroundColor: .buttonSecondaryBackground, shape: .circle, border: nil)
     )
     
     static let selectionButtonActive: Self = .init(
