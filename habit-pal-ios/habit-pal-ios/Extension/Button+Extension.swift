@@ -13,12 +13,12 @@ extension StatableButtonViewConfiguration<Image>.Display {
     
     static let primaryRoundImageButton: Self = .init(
         scriptConfiguration: .init(font: .headline, color: .buttonPrimaryForeground, multilineTextAlignment: .leading),
-        plateConfiguration: .init(sizeStyle: .padding(edgeInsets: .init(top: 10, leading: 10, bottom: 10, trailing: 10)), backgroundColor: .buttonPrimaryBackground, shape: .circle, border: nil)
+        plateConfiguration: .init(sizeStyle: .padding(edgeInsets: .init(top: 12, leading: 12, bottom: 12, trailing: 12)), backgroundColor: .buttonPrimaryBackground, shape: .circle, border: nil)
     )
     
     static let secondaryRoundImageButton: Self = .init(
         scriptConfiguration: .init(font: .headline, color: .buttonSecondaryForeground, multilineTextAlignment: .leading),
-        plateConfiguration: .init(sizeStyle: .padding(edgeInsets: .init(top: 10, leading: 10, bottom: 10, trailing: 10)), backgroundColor: .buttonSecondaryBackground, shape: .circle, border: nil)
+        plateConfiguration: .init(sizeStyle: .padding(edgeInsets: .init(top: 12, leading: 12, bottom: 12, trailing: 12)), backgroundColor: .buttonSecondaryBackground, shape: .circle, border: nil)
     )
     
     static let selectionButtonActive: Self = .init(

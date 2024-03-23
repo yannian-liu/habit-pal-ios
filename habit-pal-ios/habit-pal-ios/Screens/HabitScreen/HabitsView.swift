@@ -25,7 +25,7 @@ struct HabitsView: View {
                             SettingsView(viewModel: viewModel.settingsViewModel)
                         }
                     
-                    Spacer().frame(width: 16)
+                    Spacer().frame(width: 8)
                     StatableButtonView(configuration: viewModel.addButton)
                 }
                 
