@@ -16,9 +16,13 @@ struct SettingsView: View {
 
     var body: some View {
         ScrollView {
-            HStack {
-                Spacer()
-                StatableButtonView(configuration: viewModel.closeButton)
+            ZStack {
+                
+                TextView(textConfiguration: viewModel.navigationTitle)
+                HStack {
+                    Spacer()
+                    StatableButtonView(configuration: viewModel.closeButton)
+                }
             }
             HStack {
                 TextView(textConfiguration: viewModel.colorSchemeTitleConfiguration)

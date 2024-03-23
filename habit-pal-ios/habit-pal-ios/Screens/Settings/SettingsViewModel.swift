@@ -15,6 +15,7 @@ class SettingsViewModel: ObservableObject {
     var utilities = Utilities()
     private var cancellables = Set<AnyCancellable>()
 
+    public lazy var navigationTitle = TextConfiguration(title: "Settings", scriptConfiguration: .navigation, plateConfiguration: nil)
     public lazy var closeButton = StatableButtonViewConfiguration(
         content: Image("settings"),
         activeDisplay: .secondaryRoundImageButton,
