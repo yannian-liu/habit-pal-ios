@@ -10,7 +10,6 @@ import SwiftData
 import UIToolbox
 
 struct HabitsView: View {
-    @Environment(\.colorScheme) var colorScheme
     @Environment(\.modelContext) private var modelContext
     @Query private var habits: [Habit]
     @ObservedObject private var viewModel = HabitsViewModel()
@@ -35,6 +34,10 @@ struct HabitsView: View {
                 }
             }
             
+            Text("Coontent")
+                .frame(width: 300, height: 300)
+                .background(.cardBackground)
+
             
             NavigationSplitView {
                 List {
@@ -53,12 +56,13 @@ struct HabitsView: View {
                     }
                     
                 }
+
             } detail: {
                 Text("Select an item")
             }
         }
         .contentMargins(.all, 16)
-        .background(Color.backgroundPrimary(scheme: colorScheme))
+        .background(.backgroundPrimary)
         .onAppear(perform: {
             Utilities().overrideDisplayMode()
         })

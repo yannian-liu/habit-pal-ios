@@ -27,7 +27,7 @@ struct SettingsView: View {
             }
             
         }
-        .background(Color.backgroundSecondary(scheme: colorScheme))
+        .background(.backgroundPrimary)
         .contentMargins(.all, 16)
     }
 }
