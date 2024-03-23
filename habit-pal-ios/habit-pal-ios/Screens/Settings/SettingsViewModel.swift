@@ -17,7 +17,7 @@ class SettingsViewModel: ObservableObject {
 
     public lazy var navigationTitle = TextConfiguration(title: "Settings", scriptConfiguration: .navigation, plateConfiguration: nil)
     public lazy var closeButton = StatableButtonViewConfiguration(
-        content: Image("settings"),
+        content: Image("cross"),
         activeDisplay: .secondaryRoundImageButton,
         disabledDisplay: nil,
         highlightedDisplay: nil,
