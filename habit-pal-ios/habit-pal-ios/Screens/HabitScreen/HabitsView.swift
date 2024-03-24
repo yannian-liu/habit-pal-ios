@@ -12,10 +12,8 @@ import UIToolbox
 struct HabitsView: View {
     @ObservedObject private var viewModel = HabitsViewModel()
 
-    let rows = [
-         GridItem(.flexible()),
-         GridItem(.flexible()),
-         GridItem(.flexible())
+    let columns = [
+        GridItem(.adaptive(minimum: 50, maximum: 200))
     ]
 
     var body: some View {
@@ -38,7 +36,7 @@ struct HabitsView: View {
                 }
             }
             
-            LazyHGrid(rows: rows) {
+            LazyVGrid(columns: columns) {
                 ForEach(viewModel.habitConfigurations, id: \.self) { configuration in
                     HabitCell(configuration: configuration)
                 }
