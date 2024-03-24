@@ -10,7 +10,9 @@ import SwiftUI
 import UIToolbox
 
 struct HabitCell: View {
-    let configuration = HabitCellConfiguration(habit: Habit(id: 001, groupId: 001, title: "water", emoji: "😴", color: Color.red.hex))
+    
+    let configuration: HabitCellConfiguration
+    
     var body: some View {
         VStack {
             StatableButtonView(configuration: configuration.button)

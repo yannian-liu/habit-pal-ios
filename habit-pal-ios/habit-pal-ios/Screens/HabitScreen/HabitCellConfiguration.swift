@@ -11,7 +11,7 @@ import SwiftUI
 
 class HabitCellConfiguration {
     
-    private let habit: Habit
+    private(set) var habit: Habit
     
     lazy var button = StatableButtonViewConfiguration(
         content: Text(habit.emoji.emoji),
@@ -25,6 +25,22 @@ class HabitCellConfiguration {
     
     init(habit: Habit) {
         self.habit = habit
+    }
+    
+    
+}
+
+extension HabitCellConfiguration: Hashable {
+    var identifier: String {
+        return String(habit.id)
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        return hasher.combine(identifier)
+    }
+    
+    static func == (lhs: HabitCellConfiguration, rhs: HabitCellConfiguration) -> Bool {
+        lhs.habit.id == rhs.habit.id
     }
     
     

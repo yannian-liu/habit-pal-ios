@@ -10,10 +10,14 @@ import SwiftData
 import UIToolbox
 
 struct HabitsView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var habits: [Habit]
     @ObservedObject private var viewModel = HabitsViewModel()
-    
+
+    let rows = [
+         GridItem(.flexible()),
+         GridItem(.flexible()),
+         GridItem(.flexible())
+    ]
+
     var body: some View {
         ScrollView {
             ZStack {
@@ -34,34 +38,16 @@ struct HabitsView: View {
                 }
             }
             
-            HabitCell()
-            
+            LazyHGrid(rows: rows) {
+                ForEach(viewModel.habitConfigurations, id: \.self) { configuration in
+                    HabitCell(configuration: configuration)
+                }
+            }
+
             Text("Coontent")
                 .frame(width: 300, height: 300)
                 .background(.cardBackground)
 
-            
-            NavigationSplitView {
-                List {
-                    ForEach(habits) { habit in
-                        NavigationLink {
-                            Text("Item at \(habit.title)")
-                        } label: {
-                            Text(habit.title)
-                        }
-                    }
-                    .onDelete(perform: deleteItems)
-                }
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        EditButton()
-                    }
-                    
-                }
-
-            } detail: {
-                Text("Select an item")
-            }
         }
         .contentMargins(.all, 16)
         .background(.backgroundPrimary)
@@ -69,38 +55,8 @@ struct HabitsView: View {
             Utilities().overrideDisplayMode()
         })
     }
-
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Habit(id: 0, groupId: 1, title: "hahaha", emoji: "🇺🇸", color: "FFFFFF")
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(habits[index])
-            }
-        }
-    }
 }
 
 #Preview {
     HabitsView()
-        .modelContainer(for: Habit.self, inMemory: true)
-}
-
-class MockData {
-    let habits = [
-        Habit(id: 001, groupId: 001, title: "Water", emoji: "💧".code, color: Color.blue.hex),
-        Habit(id: 002, groupId: 001, title: "Milk", emoji: "🍼".code, color: Color.yellow.hex),
-        Habit(id: 003, groupId: 002, title: "Cereal", emoji: "🍚".code, color: Color.red.hex),
-    ]
-    
-    let groups = [
-        Group(id: 001, title: "Morning"),
-        Group(id: 002, title: "Afternoon"),
-    ]
 }
