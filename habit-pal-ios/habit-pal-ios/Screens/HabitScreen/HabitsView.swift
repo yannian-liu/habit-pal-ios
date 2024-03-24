@@ -36,7 +36,7 @@ struct HabitsView: View {
                 }
             }
             
-            LazyVGrid(columns: columns) {
+            LazyVGrid(columns: columns, spacing: 8) {
                 ForEach(viewModel.habitConfigurations, id: \.self) { configuration in
                     HabitCell(configuration: configuration)
                 }
