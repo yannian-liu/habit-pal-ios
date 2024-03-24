@@ -16,7 +16,7 @@ class SettingsViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     @ObservedObject private var habitsViewModel: HabitsViewModel
 
-    public lazy var navigationTitle = TextConfiguration(title: "Settings", scriptConfiguration: .navigation, plateConfiguration: nil)
+    public lazy var navigationTitle = TextConfiguration(title: "Settings", contentConfiguration: .navigation, plateConfiguration: nil)
     public lazy var closeButton = StatableButtonViewConfiguration(
         content: Image("cross"),
         activeDisplay: .secondaryRoundImageButton,
@@ -27,10 +27,10 @@ class SettingsViewModel: ObservableObject {
         action: { [unowned self] in habitsViewModel.shouldShowSettings = false }
     )
     
-    let colorSchemeTitleConfiguration = TextConfiguration(title: "Color scheme", scriptConfiguration: .header, plateConfiguration: nil)
+    let colorSchemeTitleConfiguration = TextConfiguration(title: "Color scheme", contentConfiguration: .header, plateConfiguration: nil)
     
     lazy var colorSchemeOptionsViewConfiguration = SingleSelectionOptionViewConfiguration(
-        descriptionScriptConfiguration: .body,
+        descriptionContentConfiguration: .body,
         descriptions: AppColorScheme.allCases.map { $0.title },
         buttonContent: Image("tick"),
         unselectedButtonStyle: .selectionButtonActive,

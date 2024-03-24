@@ -14,7 +14,7 @@ class HabitsViewModel: ObservableObject {
     @Published public var shouldShowAddNewHabitView = false
     @Published public var shouldShowSettings = false
 
-    public lazy var todayTextConfiguration = TextConfiguration(title: "Today is 22nd May", scriptConfiguration: .body, plateConfiguration: nil)
+    public lazy var todayTextConfiguration = TextConfiguration(title: "Today is 22nd May", contentConfiguration: .body, plateConfiguration: nil)
     
     public lazy var addButton = StatableButtonViewConfiguration(
         content: Image("appPlus"),
