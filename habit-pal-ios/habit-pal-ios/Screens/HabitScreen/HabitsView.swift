@@ -13,7 +13,7 @@ struct HabitsView: View {
     @ObservedObject private var viewModel = HabitsViewModel()
 
     let columns = [
-        GridItem(.adaptive(minimum: 50, maximum: 200))
+        GridItem(.adaptive(minimum: 60, maximum: 200))
     ]
 
     var body: some View {
@@ -36,7 +36,7 @@ struct HabitsView: View {
                 }
             }
             
-            LazyVGrid(columns: columns, spacing: 8) {
+            LazyVGrid(columns: columns, spacing: 16) {
                 ForEach(viewModel.habitConfigurations, id: \.self) { configuration in
                     HabitCell(configuration: configuration)
                 }
