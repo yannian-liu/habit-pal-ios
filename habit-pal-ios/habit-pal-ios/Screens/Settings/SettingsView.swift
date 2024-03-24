@@ -41,8 +41,6 @@ struct SettingsView: View {
 }
 
 struct SettingsView_Previews: PreviewProvider {
-    @State static var presented = true
-
     static var previews: some View {
         SettingsView(viewModel: SettingsViewModel(habitsViewModel: HabitsViewModel()))
             .preferredColorScheme(.light)

@@ -17,15 +17,9 @@ class SettingsViewModel: ObservableObject {
     @ObservedObject private var habitsViewModel: HabitsViewModel
 
     public lazy var navigationTitle = TextConfiguration(title: "Settings", contentConfiguration: .navigation, plateConfiguration: nil)
-    public lazy var closeButton = StatableButtonViewConfiguration(
-        content: Image("cross"),
-        activeDisplay: .secondaryRoundImageButton,
-        disabledDisplay: nil,
-        highlightedDisplay: nil,
-        animation: .scale,
-        statePublisher: nil,
-        action: { [unowned self] in habitsViewModel.shouldShowSettings = false }
-    )
+    public lazy var closeButton = StatableButtonViewConfiguration<Image>.closeButton { [unowned self] in
+        habitsViewModel.shouldShowSettings = false
+    }
     
     let colorSchemeTitleConfiguration = TextConfiguration(title: "Color scheme", contentConfiguration: .header, plateConfiguration: nil)
     

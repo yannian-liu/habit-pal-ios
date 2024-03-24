@@ -11,7 +11,7 @@ import UIToolbox
 import SwiftUI
 
 class HabitsViewModel: ObservableObject {
-    @Published public var shouldShowAddNewHabitView = false
+    @Published public var shouldShowAddHabitView = false
     @Published public var shouldShowSettings = false
     @Published public var habitConfigurations = [HabitCellConfiguration]()
     
@@ -24,7 +24,7 @@ class HabitsViewModel: ObservableObject {
         highlightedDisplay: nil,
         animation: .scale,
         statePublisher: nil,
-        action:{ [unowned self] in dataSource.addHabit(.init(id: Int.random(in: 0...999999), groupId: 001, title: "this is a really long title let take a loooooooook", emoji: "☎️", color: Color.blue.hex))}
+        action:{ [unowned self] in shouldShowAddHabitView = true }
     )
     
     public lazy var settingsButton = StatableButtonViewConfiguration(
@@ -69,17 +69,7 @@ class HabitsViewModel: ObservableObject {
         .init(habitsViewModel: self)
     }
 
-}
-
-class MockData {
-    let habits = [
-        Habit(id: 001, groupId: 001, title: "Water", emoji: "💧".code, color: Color.blue.hex),
-        Habit(id: 002, groupId: 001, title: "Milk", emoji: "🍼".code, color: Color.yellow.hex),
-        Habit(id: 003, groupId: 002, title: "Cereal", emoji: "🍚".code, color: Color.red.hex),
-    ]
-    
-    let groups = [
-        Group(id: 001, title: "Morning"),
-        Group(id: 002, title: "Afternoon"),
-    ]
+    public var addHabitViewModel: AddHabitViewModel {
+        .init(habitsViewModel: self)
+    }
 }

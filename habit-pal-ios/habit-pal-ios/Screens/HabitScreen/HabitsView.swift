@@ -29,11 +29,12 @@ struct HabitsView: View {
                     
                     Spacer().frame(width: 8)
                     StatableButtonView(configuration: viewModel.addButton)
+                        .sheet(isPresented: $viewModel.shouldShowAddHabitView) {
+                            AddHabitView(viewModel: viewModel.addHabitViewModel)
+                        }
+
                 }
-                
-                if viewModel.shouldShowAddNewHabitView {
-                    AddNewHabitView()
-                }
+
             }
             
             if viewModel.noHabits {

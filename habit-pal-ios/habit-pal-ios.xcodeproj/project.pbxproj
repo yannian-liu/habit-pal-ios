@@ -10,8 +10,8 @@
 		BB1028982BAC501D00C17BA5 /* String+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1028972BAC501D00C17BA5 /* String+Emoji.swift */; };
 		BB10289A2BAC579A00C17BA5 /* String+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1028992BAC579A00C17BA5 /* String+Font.swift */; };
 		BB10289C2BAC5D9D00C17BA5 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10289B2BAC5D9D00C17BA5 /* Group.swift */; };
-		BB10289E2BAC5ECC00C17BA5 /* AddNewHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10289D2BAC5ECC00C17BA5 /* AddNewHabitView.swift */; };
-		BB1028A02BAC5EE700C17BA5 /* AddNewHabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10289F2BAC5EE700C17BA5 /* AddNewHabitViewModel.swift */; };
+		BB10289E2BAC5ECC00C17BA5 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10289D2BAC5ECC00C17BA5 /* AddHabitView.swift */; };
+		BB1028A02BAC5EE700C17BA5 /* AddHabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10289F2BAC5EE700C17BA5 /* AddHabitViewModel.swift */; };
 		BB1028A62BAC86B100C17BA5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1028A52BAC86B100C17BA5 /* SettingsView.swift */; };
 		BB1028A82BAC86BD00C17BA5 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1028A72BAC86BD00C17BA5 /* SettingsViewModel.swift */; };
 		BB3C78362BAB381600D49B3E /* habit_pal_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78352BAB381600D49B3E /* habit_pal_iosApp.swift */; };
@@ -30,10 +30,11 @@
 		BBB3E29F2BAC40F700257FEC /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = BBB3E29E2BAC40F700257FEC /* UIToolbox */; };
 		BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */; };
 		BBB3E2A52BAC452500257FEC /* Border+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A42BAC452500257FEC /* Border+Extension.swift */; };
-		BBB3E2A72BAC458B00257FEC /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A62BAC458B00257FEC /* Button+Extension.swift */; };
+		BBB3E2A72BAC458B00257FEC /* ButtonDisplay+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A62BAC458B00257FEC /* ButtonDisplay+Extension.swift */; };
 		BBF8FDDB2BB05ECE003CF597 /* Plate+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */; };
 		BBF8FDDD2BB06097003CF597 /* UIKit+Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDC2BB06097003CF597 /* UIKit+Haptics.swift */; };
 		BBF8FDDF2BB060F7003CF597 /* HabitDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDE2BB060F7003CF597 /* HabitDataSource.swift */; };
+		BBF8FDE12BB074CC003CF597 /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDE02BB074CC003CF597 /* Button+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,8 @@
 		BB1028972BAC501D00C17BA5 /* String+Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Emoji.swift"; sourceTree = "<group>"; };
 		BB1028992BAC579A00C17BA5 /* String+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Font.swift"; sourceTree = "<group>"; };
 		BB10289B2BAC5D9D00C17BA5 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
-		BB10289D2BAC5ECC00C17BA5 /* AddNewHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewHabitView.swift; sourceTree = "<group>"; };
-		BB10289F2BAC5EE700C17BA5 /* AddNewHabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewHabitViewModel.swift; sourceTree = "<group>"; };
+		BB10289D2BAC5ECC00C17BA5 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		BB10289F2BAC5EE700C17BA5 /* AddHabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewModel.swift; sourceTree = "<group>"; };
 		BB1028A52BAC86B100C17BA5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BB1028A72BAC86BD00C17BA5 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		BB3C78322BAB381600D49B3E /* habit-pal-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "habit-pal-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,10 +80,11 @@
 		BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
 		BBB3E2A42BAC452500257FEC /* Border+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Border+Extension.swift"; sourceTree = "<group>"; };
-		BBB3E2A62BAC458B00257FEC /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
+		BBB3E2A62BAC458B00257FEC /* ButtonDisplay+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonDisplay+Extension.swift"; sourceTree = "<group>"; };
 		BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plate+App.swift"; sourceTree = "<group>"; };
 		BBF8FDDC2BB06097003CF597 /* UIKit+Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Haptics.swift"; sourceTree = "<group>"; };
 		BBF8FDDE2BB060F7003CF597 /* HabitDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDataSource.swift; sourceTree = "<group>"; };
+		BBF8FDE02BB074CC003CF597 /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +127,8 @@
 		BB1028A32BAC5F0800C17BA5 /* AddNewHabitScreen */ = {
 			isa = PBXGroup;
 			children = (
-				BB10289D2BAC5ECC00C17BA5 /* AddNewHabitView.swift */,
-				BB10289F2BAC5EE700C17BA5 /* AddNewHabitViewModel.swift */,
+				BB10289D2BAC5ECC00C17BA5 /* AddHabitView.swift */,
+				BB10289F2BAC5EE700C17BA5 /* AddHabitViewModel.swift */,
 			);
 			path = AddNewHabitScreen;
 			sourceTree = "<group>";
@@ -221,7 +223,8 @@
 			children = (
 				BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */,
 				BBB3E2A42BAC452500257FEC /* Border+Extension.swift */,
-				BBB3E2A62BAC458B00257FEC /* Button+Extension.swift */,
+				BBB3E2A62BAC458B00257FEC /* ButtonDisplay+Extension.swift */,
+				BBF8FDE02BB074CC003CF597 /* Button+Extension.swift */,
 				BB1028972BAC501D00C17BA5 /* String+Emoji.swift */,
 				BB1028992BAC579A00C17BA5 /* String+Font.swift */,
 				BB5DC8F22BADA96600859613 /* ContentConfiguration+App.swift */,
@@ -380,10 +383,10 @@
 			files = (
 				BB5DC8FB2BAFF87F00859613 /* HabitCell.swift in Sources */,
 				BB5DC8F52BADBD3900859613 /* ColorScheme.swift in Sources */,
-				BB1028A02BAC5EE700C17BA5 /* AddNewHabitViewModel.swift in Sources */,
+				BB1028A02BAC5EE700C17BA5 /* AddHabitViewModel.swift in Sources */,
 				BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */,
 				BB3C78382BAB381600D49B3E /* HabitsView.swift in Sources */,
-				BBB3E2A72BAC458B00257FEC /* Button+Extension.swift in Sources */,
+				BBB3E2A72BAC458B00257FEC /* ButtonDisplay+Extension.swift in Sources */,
 				BBF8FDDF2BB060F7003CF597 /* HabitDataSource.swift in Sources */,
 				BB10289C2BAC5D9D00C17BA5 /* Group.swift in Sources */,
 				BB1028982BAC501D00C17BA5 /* String+Emoji.swift in Sources */,
@@ -396,9 +399,10 @@
 				BBB3E2A52BAC452500257FEC /* Border+Extension.swift in Sources */,
 				BBF8FDDD2BB06097003CF597 /* UIKit+Haptics.swift in Sources */,
 				BB10289A2BAC579A00C17BA5 /* String+Font.swift in Sources */,
-				BB10289E2BAC5ECC00C17BA5 /* AddNewHabitView.swift in Sources */,
+				BB10289E2BAC5ECC00C17BA5 /* AddHabitView.swift in Sources */,
 				BB1028A62BAC86B100C17BA5 /* SettingsView.swift in Sources */,
 				BB1028A82BAC86BD00C17BA5 /* SettingsViewModel.swift in Sources */,
+				BBF8FDE12BB074CC003CF597 /* Button+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
