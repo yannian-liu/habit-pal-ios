@@ -34,6 +34,8 @@ struct HabitsView: View {
                 }
             }
             
+            HabitCell()
+            
             Text("Coontent")
                 .frame(width: 300, height: 300)
                 .background(.cardBackground)
