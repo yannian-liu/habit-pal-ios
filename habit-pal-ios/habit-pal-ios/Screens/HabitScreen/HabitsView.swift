@@ -13,7 +13,7 @@ struct HabitsView: View {
     @ObservedObject private var viewModel = HabitsViewModel()
 
     let columns = [
-        GridItem(.adaptive(minimum: 60, maximum: 200))
+        GridItem(.adaptive(minimum: 55, maximum: 100), alignment: .top)
     ]
 
     var body: some View {
@@ -41,10 +41,14 @@ struct HabitsView: View {
                     HabitCell(configuration: configuration)
                 }
             }
-
-            Text("Coontent")
-                .frame(width: 300, height: 300)
-                .background(.cardBackground)
+            .plateConfiguration(
+                .init(
+                    sizeStyle: .paddingDefault,
+                    color: .cardBackground,
+                    shape: .rectangle(cornerRadius: 15),
+                    border: nil
+                )
+            )
 
         }
         .contentMargins(.all, 16)

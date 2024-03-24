@@ -36,7 +36,7 @@ extension StatableButtonViewConfiguration<Text>.Display {
     
     static func emojiRoundButtonIncompleted(plateColor: Color) -> Self {
         .init(
-            contentConfiguration: .init(font: .headline, color: .white, multilineTextAlignment: .leading),
+            contentConfiguration: .init(font: .body, color: .white, multilineTextAlignment: .leading),
             plateConfiguration: .init(sizeStyle: .paddingDefault, color: plateColor.opacity(0.2), shape: .circle, border: .primary(plateColor))
         )
     }

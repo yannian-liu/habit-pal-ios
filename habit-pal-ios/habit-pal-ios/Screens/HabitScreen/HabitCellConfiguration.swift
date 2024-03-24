@@ -23,6 +23,12 @@ class HabitCellConfiguration {
         action: { }
     )
     
+    lazy var text = TextConfiguration(
+        title: habit.title,
+        contentConfiguration: .detail,
+        plateConfiguration: nil
+    )
+    
     init(habit: Habit) {
         self.habit = habit
     }

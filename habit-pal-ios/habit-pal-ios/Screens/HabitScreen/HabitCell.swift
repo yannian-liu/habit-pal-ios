@@ -16,6 +16,7 @@ struct HabitCell: View {
     var body: some View {
         VStack {
             StatableButtonView(configuration: configuration.button)
+            TextView(textConfiguration: configuration.text)
         }
     }
 }

@@ -25,7 +25,7 @@ class HabitsViewModel: ObservableObject {
         highlightedDisplay: nil,
         animation: .scale,
         statePublisher: nil,
-        action:{ [unowned self] in dataSource.addHabit(.init(id: Int.random(in: 0...999999), groupId: 001, title: "water2", emoji: "☎️", color: Color.blue.hex))}
+        action:{ [unowned self] in dataSource.addHabit(.init(id: Int.random(in: 0...999999), groupId: 001, title: "this is a really long title let take a loooooooook", emoji: "☎️", color: Color.blue.hex))}
     )
     
     public lazy var settingsButton = StatableButtonViewConfiguration(
