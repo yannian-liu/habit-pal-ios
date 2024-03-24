@@ -15,7 +15,7 @@ class HabitsViewModel: ObservableObject {
     @Published public var shouldShowAddNewHabitView = false
     @Published public var shouldShowSettings = false
     @Published public var habitConfigurations = [HabitCellConfiguration]()
-        
+    
     public var todayTextConfiguration = TextConfiguration(title: "Today is 22nd May", contentConfiguration: .body, plateConfiguration: nil)
     
     public lazy var addButton = StatableButtonViewConfiguration.init(
@@ -38,6 +38,14 @@ class HabitsViewModel: ObservableObject {
         action:{ [unowned self] in shouldShowSettings = true }
     )
     
+    public let emptyText = TextConfiguration(
+        title: "You have no habit.\nClick the plus button to add one.",
+        contentConfiguration: .bodyCentred,
+        plateConfiguration: nil
+    )
+    
+    @Published var noHabits: Bool!
+
     private var dataSource: HabitDataSource
     private var subscribes = Set<AnyCancellable>()
 
@@ -48,6 +56,12 @@ class HabitsViewModel: ObservableObject {
                 habitConfigurations = habits.map { habit in
                     HabitCellConfiguration(habit: habit)
                 }
+            })
+            .store(in: &subscribes)
+        
+        self.dataSource.$habits
+            .sink(receiveValue: { [unowned self] habits in
+                noHabits = (habits.count == 0)
             })
             .store(in: &subscribes)
     }

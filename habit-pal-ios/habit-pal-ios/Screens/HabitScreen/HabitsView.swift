@@ -36,19 +36,24 @@ struct HabitsView: View {
                 }
             }
             
-            LazyVGrid(columns: columns, spacing: 16) {
-                ForEach(viewModel.habitConfigurations, id: \.self) { configuration in
-                    HabitCell(configuration: configuration)
+            if viewModel.noHabits {
+                HStack {
+                    Spacer().frame(width: .infinity)
+                    TextView(textConfiguration: viewModel.emptyText)
+                        .fixedSize(horizontal: true, vertical: true)
+                    Spacer().frame(width: .infinity)
                 }
+                .plateConfiguration(.card)
+                
+            } else {
+                LazyVGrid(columns: columns, spacing: 16) {
+                    ForEach(viewModel.habitConfigurations, id: \.self) { configuration in
+                        HabitCell(configuration: configuration)
+                    }
+                }
+                .plateConfiguration(.card)
+
             }
-            .plateConfiguration(
-                .init(
-                    sizeStyle: .paddingDefault,
-                    color: .cardBackground,
-                    shape: .rectangle(cornerRadius: 15),
-                    border: nil
-                )
-            )
 
         }
         .contentMargins(.all, 16)

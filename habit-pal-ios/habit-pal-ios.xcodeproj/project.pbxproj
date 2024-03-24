@@ -31,6 +31,7 @@
 		BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */; };
 		BBB3E2A52BAC452500257FEC /* Border+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A42BAC452500257FEC /* Border+Extension.swift */; };
 		BBB3E2A72BAC458B00257FEC /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A62BAC458B00257FEC /* Button+Extension.swift */; };
+		BBF8FDDB2BB05ECE003CF597 /* Plate+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
 		BBB3E2A42BAC452500257FEC /* Border+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Border+Extension.swift"; sourceTree = "<group>"; };
 		BBB3E2A62BAC458B00257FEC /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
+		BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plate+App.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				BB1028972BAC501D00C17BA5 /* String+Emoji.swift */,
 				BB1028992BAC579A00C17BA5 /* String+Font.swift */,
 				BB5DC8F22BADA96600859613 /* ContentConfiguration+App.swift */,
+				BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */,
 				BB5DC8F42BADBD3900859613 /* ColorScheme.swift */,
 			);
 			path = Extension;
@@ -377,6 +380,7 @@
 				BBB3E2A72BAC458B00257FEC /* Button+Extension.swift in Sources */,
 				BB10289C2BAC5D9D00C17BA5 /* Group.swift in Sources */,
 				BB1028982BAC501D00C17BA5 /* String+Emoji.swift in Sources */,
+				BBF8FDDB2BB05ECE003CF597 /* Plate+App.swift in Sources */,
 				BB3C783A2BAB381600D49B3E /* Habit.swift in Sources */,
 				BB5DC8FD2BAFF88D00859613 /* HabitCellConfiguration.swift in Sources */,
 				BB3C78362BAB381600D49B3E /* habit_pal_iosApp.swift in Sources */,
