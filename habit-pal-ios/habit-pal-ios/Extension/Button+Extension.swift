@@ -40,4 +40,11 @@ extension StatableButtonViewConfiguration<Text>.Display {
             plateConfiguration: .init(sizeStyle: .paddingDefault, color: plateColor.opacity(0.2), shape: .circle, border: .primary(plateColor))
         )
     }
+    
+    static func emojiRoundButtonCompleted(plateColor: Color) -> Self {
+        .init(
+            contentConfiguration: .init(font: .body, color: .white, multilineTextAlignment: .leading),
+            plateConfiguration: .init(sizeStyle: .paddingDefault, color: plateColor, shape: .circle, border: .primary(plateColor))
+        )
+    }
 }

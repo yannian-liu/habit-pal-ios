@@ -12,15 +12,19 @@ import SwiftUI
 class HabitCellConfiguration {
     
     private(set) var habit: Habit
-    
+    @Published private var isCompletedToday: Bool
+
     lazy var button = StatableButtonViewConfiguration(
         content: Text(habit.emoji.emoji),
         activeDisplay: .emojiRoundButtonIncompleted(plateColor: .init(hex: habit.color)),
         disabledDisplay: nil,
-        highlightedDisplay: nil,
+        highlightedDisplay: .emojiRoundButtonCompleted(plateColor: .init(hex: habit.color)),
         animation: .scale,
-        statePublisher: nil,
-        action: { }
+        statePublisher: $isCompletedToday.map { $0 ? .highlighted : .active }.eraseToAnyPublisher(),
+        action: { [unowned self] in
+            habit.toggleComplete()
+            isCompletedToday = habit.isCompletedToday
+        }
     )
     
     lazy var text = TextConfiguration(
@@ -31,6 +35,7 @@ class HabitCellConfiguration {
     
     init(habit: Habit) {
         self.habit = habit
+        isCompletedToday = habit.isCompletedToday
     }
     
     
