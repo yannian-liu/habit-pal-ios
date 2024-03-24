@@ -24,6 +24,7 @@ class HabitCellConfiguration {
         action: { [unowned self] in
             habit.toggleComplete()
             isCompletedToday = habit.isCompletedToday
+            Haptics.shared.play(.heavy)
         }
     )
     
