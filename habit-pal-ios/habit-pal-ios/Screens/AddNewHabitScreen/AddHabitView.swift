@@ -13,15 +13,7 @@ struct AddHabitView: View {
     @ObservedObject var viewModel: AddHabitViewModel
     var body: some View {
         ScrollView {
-            ZStack {
-                
-                TextView(textConfiguration: viewModel.navigationTitle)
-                HStack {
-                    Spacer()
-                    StatableButtonView(configuration: viewModel.closeButton)
-                }
-            }
-            
+            NavigationView(configuration: viewModel.navigationConfiguration)
         }
         .background(.backgroundPrimary)
         .contentMargins(.all, 16)

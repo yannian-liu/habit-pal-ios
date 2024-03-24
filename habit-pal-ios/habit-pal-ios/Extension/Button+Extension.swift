@@ -23,5 +23,5 @@ extension StatableButtonViewConfiguration<Image> {
         )
 
     }
-    
+
 }

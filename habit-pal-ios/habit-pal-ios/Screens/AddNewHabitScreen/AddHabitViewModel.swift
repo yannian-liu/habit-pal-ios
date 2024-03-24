@@ -13,9 +13,8 @@ import SwiftUI
 class AddHabitViewModel: ObservableObject {
     @ObservedObject private var habitsViewModel: HabitsViewModel
 
-    public lazy var navigationTitle = TextConfiguration(title: "Add a Habit", contentConfiguration: .navigation, plateConfiguration: nil)
-    public lazy var closeButton = StatableButtonViewConfiguration<Image>.closeButton { [unowned self] in
-        habitsViewModel.shouldShowAddHabitView = false
+    public lazy var navigationConfiguration = NavigationViewConfiguration(title: "Add a Habit") { [unowned self] in
+            habitsViewModel.shouldShowAddHabitView = false
     }
 
     init(habitsViewModel: HabitsViewModel) {
