@@ -33,6 +33,7 @@
 		BBB3E2A72BAC458B00257FEC /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A62BAC458B00257FEC /* Button+Extension.swift */; };
 		BBF8FDDB2BB05ECE003CF597 /* Plate+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */; };
 		BBF8FDDD2BB06097003CF597 /* UIKit+Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDC2BB06097003CF597 /* UIKit+Haptics.swift */; };
+		BBF8FDDF2BB060F7003CF597 /* HabitDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDE2BB060F7003CF597 /* HabitDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		BBB3E2A62BAC458B00257FEC /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
 		BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plate+App.swift"; sourceTree = "<group>"; };
 		BBF8FDDC2BB06097003CF597 /* UIKit+Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Haptics.swift"; sourceTree = "<group>"; };
+		BBF8FDDE2BB060F7003CF597 /* HabitDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 			children = (
 				BB10289B2BAC5D9D00C17BA5 /* Group.swift */,
 				BB3C78392BAB381600D49B3E /* Habit.swift */,
+				BBF8FDDE2BB060F7003CF597 /* HabitDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */,
 				BB3C78382BAB381600D49B3E /* HabitsView.swift in Sources */,
 				BBB3E2A72BAC458B00257FEC /* Button+Extension.swift in Sources */,
+				BBF8FDDF2BB060F7003CF597 /* HabitDataSource.swift in Sources */,
 				BB10289C2BAC5D9D00C17BA5 /* Group.swift in Sources */,
 				BB1028982BAC501D00C17BA5 /* String+Emoji.swift in Sources */,
 				BBF8FDDB2BB05ECE003CF597 /* Plate+App.swift in Sources */,
