@@ -22,7 +22,7 @@
 		BB3C78492BAB381700D49B3E /* habit_pal_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78482BAB381700D49B3E /* habit_pal_iosTests.swift */; };
 		BB3C78532BAB381700D49B3E /* habit_pal_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78522BAB381700D49B3E /* habit_pal_iosUITests.swift */; };
 		BB3C78552BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3C78542BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift */; };
-		BB5DC8F32BADA96600859613 /* ContentConfiguration+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8F22BADA96600859613 /* ContentConfiguration+App.swift */; };
+		BB5DC8F32BADA96600859613 /* Content+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8F22BADA96600859613 /* Content+App.swift */; };
 		BB5DC8F52BADBD3900859613 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8F42BADBD3900859613 /* ColorScheme.swift */; };
 		BB5DC8FB2BAFF87F00859613 /* HabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8FA2BAFF87F00859613 /* HabitCell.swift */; };
 		BB5DC8FD2BAFF88D00859613 /* HabitCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8FC2BAFF88D00859613 /* HabitCellConfiguration.swift */; };
@@ -74,7 +74,7 @@
 		BB3C784E2BAB381700D49B3E /* habit-pal-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "habit-pal-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3C78522BAB381700D49B3E /* habit_pal_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosUITests.swift; sourceTree = "<group>"; };
 		BB3C78542BAB381700D49B3E /* habit_pal_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habit_pal_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BB5DC8F22BADA96600859613 /* ContentConfiguration+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentConfiguration+App.swift"; sourceTree = "<group>"; };
+		BB5DC8F22BADA96600859613 /* Content+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content+App.swift"; sourceTree = "<group>"; };
 		BB5DC8F42BADBD3900859613 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		BB5DC8FA2BAFF87F00859613 /* HabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCell.swift; sourceTree = "<group>"; };
 		BB5DC8FC2BAFF88D00859613 /* HabitCellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCellConfiguration.swift; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 				BBF8FDE02BB074CC003CF597 /* Button+Extension.swift */,
 				BB1028972BAC501D00C17BA5 /* String+Emoji.swift */,
 				BB1028992BAC579A00C17BA5 /* String+Font.swift */,
-				BB5DC8F22BADA96600859613 /* ContentConfiguration+App.swift */,
+				BB5DC8F22BADA96600859613 /* Content+App.swift */,
 				BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */,
 				BBF8FDDC2BB06097003CF597 /* UIKit+Haptics.swift */,
 				BB5DC8F42BADBD3900859613 /* ColorScheme.swift */,
@@ -406,7 +406,7 @@
 				BB5DC8FD2BAFF88D00859613 /* HabitCellConfiguration.swift in Sources */,
 				BBF8FDE32BB0792C003CF597 /* NavigationView.swift in Sources */,
 				BB3C78362BAB381600D49B3E /* habit_pal_iosApp.swift in Sources */,
-				BB5DC8F32BADA96600859613 /* ContentConfiguration+App.swift in Sources */,
+				BB5DC8F32BADA96600859613 /* Content+App.swift in Sources */,
 				BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */,
 				BBB3E2A52BAC452500257FEC /* Border+Extension.swift in Sources */,
 				BBF8FDDD2BB06097003CF597 /* UIKit+Haptics.swift in Sources */,

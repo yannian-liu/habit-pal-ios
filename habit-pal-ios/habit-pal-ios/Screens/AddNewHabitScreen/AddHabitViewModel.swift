@@ -16,6 +16,16 @@ class AddHabitViewModel: ObservableObject {
     public lazy var navigationConfiguration = NavigationViewConfiguration(title: "Add a Habit") { [unowned self] in
             habitsViewModel.shouldShowAddHabitView = false
     }
+    
+    public lazy var emojiConfiguration = OneCharTextFieldViewConfiguration(
+        contentConfiguration: .emoji,
+        plateConfiguration: .emojiCompleted(plateColor: .red),
+        accentColor: .clear,
+        isSelectionDisabled: true,
+        keepPrefixWhenTypeOnFull: false,
+        statePublisher: nil,
+        tag: 0
+    )
 
     init(habitsViewModel: HabitsViewModel) {
         self.habitsViewModel = habitsViewModel

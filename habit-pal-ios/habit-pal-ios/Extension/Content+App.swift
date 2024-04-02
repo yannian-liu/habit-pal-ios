@@ -14,5 +14,5 @@ extension ContentConfiguration {
     static let body: Self = .init(font: .custom(.FontName.avenirMedium, size: 16), color: .textPrimary, multilineTextAlignment: .leading)
     static let bodyCentred: Self = .init(font: .custom(.FontName.avenirMedium, size: 16), color: .textPrimary, multilineTextAlignment: .center)
     static let detail: Self = .init(font: .custom(.FontName.avenirBook, size: 14), color: .textPrimary, multilineTextAlignment: .leading)
-
+    static let emoji: Self = .init(font: .body, color: .white, multilineTextAlignment: .center)
 }

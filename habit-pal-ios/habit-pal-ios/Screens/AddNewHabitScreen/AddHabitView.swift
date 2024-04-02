@@ -14,6 +14,9 @@ struct AddHabitView: View {
     var body: some View {
         ScrollView {
             NavigationView(configuration: viewModel.navigationConfiguration)
+            
+            OneCharTextFieldView(configuration: viewModel.emojiConfiguration)
+
         }
         .background(.backgroundPrimary)
         .contentMargins(.all, 16)
