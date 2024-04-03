@@ -22,7 +22,7 @@ class AddHabitViewModel: ObservableObject {
     
     public var emojiTextField = OneCharTextFieldViewConfiguration(
         contentDisplay: .emoji,
-        plateDisplay: .emojiForDetail(plateColor: .red),
+        plateDisplay: .emojiForDetail(plateColor: .clear),
         accentColor: .clear,
         isSelectionDisabled: true,
         keepPrefixWhenTypeOnFull: false,
