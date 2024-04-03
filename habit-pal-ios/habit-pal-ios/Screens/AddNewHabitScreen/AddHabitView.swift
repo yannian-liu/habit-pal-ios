@@ -15,7 +15,11 @@ struct AddHabitView: View {
         ScrollView {
             NavigationView(configuration: viewModel.navigationConfiguration)
             
-            OneCharTextFieldView(configuration: viewModel.emojiConfiguration)
+            ZStack {
+                OneCharTextFieldView(configuration: viewModel.emojiConfiguration)
+                StatableButtonView(configuration: viewModel.button)
+            }
+            
 
         }
         .background(.backgroundPrimary)

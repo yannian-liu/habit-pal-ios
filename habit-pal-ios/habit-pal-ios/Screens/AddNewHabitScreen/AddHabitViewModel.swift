@@ -26,6 +26,18 @@ class AddHabitViewModel: ObservableObject {
         statePublisher: nil,
         tag: 0
     )
+    
+    lazy var button = StatableButtonViewConfiguration(
+        content: Text("?"),
+        activeDisplay: .emojiRoundButtonCompleted(plateColor: .blue),
+        disabledDisplay: nil,
+        highlightedDisplay: nil,
+        animation: .scale,
+        statePublisher: nil,
+        action: { [unowned self] in
+            emojiConfiguration.textFieldViewConfiguration.becomeFocus()
+        }
+    )
 
     init(habitsViewModel: HabitsViewModel) {
         self.habitsViewModel = habitsViewModel
