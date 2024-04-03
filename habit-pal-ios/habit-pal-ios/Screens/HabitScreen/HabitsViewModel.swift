@@ -15,7 +15,7 @@ class HabitsViewModel: ObservableObject {
     @Published public var shouldShowSettings = false
     @Published public var habitConfigurations = [HabitCellConfiguration]()
     
-    public var todayTextConfiguration = TextConfiguration(title: "Today is 22nd May", contentConfiguration: .body, plateConfiguration: nil)
+    public var todayTextConfiguration = TextViewConfiguration(title: "Today is 22nd May", contentDisplay: .body, plateDisplay: nil)
     
     public lazy var addButton = StatableButtonViewConfiguration.init(
         content: Image("appPlus"),
@@ -37,10 +37,10 @@ class HabitsViewModel: ObservableObject {
         action:{ [unowned self] in shouldShowSettings = true }
     )
     
-    public let emptyText = TextConfiguration(
+    public let emptyText = TextViewConfiguration(
         title: "You have no habit.\nClick the plus button to add one.",
-        contentConfiguration: .bodyCentred,
-        plateConfiguration: nil
+        contentDisplay: .bodyCentred,
+        plateDisplay: nil
     )
     
     @Published var noHabits: Bool!

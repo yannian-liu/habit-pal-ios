@@ -28,10 +28,10 @@ class HabitCellConfiguration {
         }
     )
     
-    lazy var text = TextConfiguration(
+    lazy var text = TextViewConfiguration(
         title: habit.title,
-        contentConfiguration: .detail,
-        plateConfiguration: nil
+        contentDisplay: .detail,
+        plateDisplay: nil
     )
     
     init(habit: Habit) {

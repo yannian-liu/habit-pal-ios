@@ -18,8 +18,8 @@ class AddHabitViewModel: ObservableObject {
     }
     
     public lazy var emojiConfiguration = OneCharTextFieldViewConfiguration(
-        contentConfiguration: .emoji,
-        plateConfiguration: .emojiCompleted(plateColor: .red),
+        contentDisplay: .emoji,
+        plateDisplay: .emojiCompleted(plateColor: .red),
         accentColor: .clear,
         isSelectionDisabled: true,
         keepPrefixWhenTypeOnFull: false,

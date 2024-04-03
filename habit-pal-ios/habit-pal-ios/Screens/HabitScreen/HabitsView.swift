@@ -44,7 +44,7 @@ struct HabitsView: View {
                         .fixedSize(horizontal: true, vertical: true)
                     Spacer().frame(width: .infinity)
                 }
-                .plateConfiguration(.card)
+                .plateDisplay(.card)
                 
             } else {
                 LazyVGrid(columns: columns, spacing: 16) {
@@ -52,7 +52,7 @@ struct HabitsView: View {
                         HabitCell(configuration: configuration)
                     }
                 }
-                .plateConfiguration(.card)
+                .plateDisplay(.card)
 
             }
 

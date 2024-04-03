@@ -28,14 +28,14 @@ struct NavigationView: View {
 }
 
 class NavigationViewConfiguration {
-    public var textConfiguration: TextConfiguration
+    public var textConfiguration: TextViewConfiguration
     public var closeButton: StatableButtonViewConfiguration<Image>?
     
     init(title: String, closeAction: (()->Void)?) {
         textConfiguration = .init(
             title: title,
-            contentConfiguration: .navigation,
-            plateConfiguration: nil
+            contentDisplay: .navigation,
+            plateDisplay: nil
         )
         
         if let closeAction = closeAction {

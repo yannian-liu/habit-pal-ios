@@ -20,10 +20,10 @@ class SettingsViewModel: ObservableObject {
             habitsViewModel.shouldShowSettings = false
     }
 
-    let colorSchemeTitleConfiguration = TextConfiguration(title: "Color scheme", contentConfiguration: .header, plateConfiguration: nil)
+    let colorSchemeTitleConfiguration = TextViewConfiguration(title: "Color scheme", contentDisplay: .header, plateDisplay: nil)
     
     lazy var colorSchemeOptionsViewConfiguration = SingleSelectionOptionViewConfiguration(
-        descriptionContentConfiguration: .body,
+        descriptionContentDisplay: .body,
         descriptions: AppColorScheme.allCases.map { $0.title },
         buttonContent: Image("tick"),
         unselectedButtonStyle: .selectionButtonActive,

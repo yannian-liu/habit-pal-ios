@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import UIToolbox
 
-extension PlateConfiguration.Border {
+extension PlateDisplay.Border {
     
     static let primary: Self = .primary(.navyBlue)
     

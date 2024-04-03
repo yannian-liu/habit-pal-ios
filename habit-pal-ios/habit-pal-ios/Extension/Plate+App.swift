@@ -9,7 +9,7 @@ import Foundation
 import UIToolbox
 import SwiftUI
 
-extension PlateConfiguration {
+extension PlateDisplay {
     static let card: Self = .init(
         sizeStyle: .paddingDefault,
         color: .cardBackground,
