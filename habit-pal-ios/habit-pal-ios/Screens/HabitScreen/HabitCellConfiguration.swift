@@ -16,9 +16,9 @@ class HabitCellConfiguration {
 
     lazy var button = StatableButtonViewConfiguration(
         content: Text(habit.emoji.emoji),
-        activeDisplay: .emojiRoundButtonIncompleted(plateColor: .init(hex: habit.color)),
+        activeDisplay: .emojiIncompleted(plateColor: .init(hex: habit.color)),
         disabledDisplay: nil,
-        highlightedDisplay: .emojiRoundButtonCompleted(plateColor: .init(hex: habit.color)),
+        highlightedDisplay: .emojiCompleted(plateColor: .init(hex: habit.color)),
         animation: .scale,
         statePublisher: $isCompletedToday.map { $0 ? .highlighted : .active }.eraseToAnyPublisher(),
         action: { [unowned self] in

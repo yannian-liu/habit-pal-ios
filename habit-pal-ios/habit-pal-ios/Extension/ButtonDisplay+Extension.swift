@@ -34,17 +34,24 @@ extension StatableButtonViewConfiguration<Image>.Display {
 
 extension StatableButtonViewConfiguration<Text>.Display {
     
-    static func emojiRoundButtonIncompleted(plateColor: Color) -> Self {
+    static func emojiIncompleted(plateColor: Color) -> Self {
         .init(
             contentDisplay: .emoji,
             plateDisplay: .emojiIncompleted(plateColor: plateColor)
         )
     }
     
-    static func emojiRoundButtonCompleted(plateColor: Color) -> Self {
+    static func emojiCompleted(plateColor: Color) -> Self {
         .init(
             contentDisplay: .emoji,
             plateDisplay: .emojiCompleted(plateColor: plateColor)
+        )
+    }
+    
+    static func emojiForDetail(plateColor: Color) -> Self {
+        .init(
+            contentDisplay: .emojiForDetail,
+            plateDisplay: .emojiForDetail(plateColor: plateColor)
         )
     }
 }

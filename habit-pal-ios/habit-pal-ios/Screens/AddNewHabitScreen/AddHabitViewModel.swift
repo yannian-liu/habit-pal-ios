@@ -17,29 +17,30 @@ class AddHabitViewModel: ObservableObject {
             habitsViewModel.shouldShowAddHabitView = false
     }
     
-    public lazy var emojiConfiguration = OneCharTextFieldViewConfiguration(
+    public lazy var emojiTextField = OneCharTextFieldViewConfiguration(
         contentDisplay: .emoji,
-        plateDisplay: .emojiCompleted(plateColor: .red),
+        plateDisplay: .emojiForDetail(plateColor: .red),
         accentColor: .clear,
         isSelectionDisabled: true,
         keepPrefixWhenTypeOnFull: false,
         statePublisher: nil,
         tag: 0
     )
-    
-    lazy var button = StatableButtonViewConfiguration(
-        content: Text("?"),
-        activeDisplay: .emojiRoundButtonCompleted(plateColor: .blue),
+        
+    lazy var emojiButton = StatableButtonViewConfiguration(
+        content: Text("💧"),
+        activeDisplay: .emojiForDetail(plateColor: .blue),
         disabledDisplay: nil,
         highlightedDisplay: nil,
         animation: .scale,
         statePublisher: nil,
         action: { [unowned self] in
-            emojiConfiguration.textFieldViewConfiguration.becomeFocus()
+            emojiTextField.textFieldViewConfiguration.becomeFocus()
         }
     )
 
     init(habitsViewModel: HabitsViewModel) {
         self.habitsViewModel = habitsViewModel
+        
     }
 }

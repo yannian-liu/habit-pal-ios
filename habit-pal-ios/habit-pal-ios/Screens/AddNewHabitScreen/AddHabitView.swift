@@ -11,16 +11,16 @@ import SwiftUI
 
 struct AddHabitView: View {
     @ObservedObject var viewModel: AddHabitViewModel
+
     var body: some View {
         ScrollView {
             NavigationView(configuration: viewModel.navigationConfiguration)
             
             ZStack {
-                OneCharTextFieldView(configuration: viewModel.emojiConfiguration)
-                StatableButtonView(configuration: viewModel.button)
+                OneCharTextFieldView(configuration: viewModel.emojiTextField)
+                StatableButtonView(configuration: viewModel.emojiButton)
             }
             
-
         }
         .background(.backgroundPrimary)
         .contentMargins(.all, 16)

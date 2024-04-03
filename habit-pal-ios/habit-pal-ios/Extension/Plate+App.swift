@@ -25,4 +25,8 @@ extension PlateDisplay {
         .init(sizeStyle: .paddingDefault, color: plateColor, shape: .circle, border: .primary(plateColor))
     }
 
+    static func emojiForDetail(plateColor: Color) -> Self {
+        .init(sizeStyle: .padding(edgeInsets: .init(top: 16, leading: 16, bottom: 16, trailing: 16)), color: plateColor, shape: .circle, border: .primary(plateColor))
+    }
+
 }
