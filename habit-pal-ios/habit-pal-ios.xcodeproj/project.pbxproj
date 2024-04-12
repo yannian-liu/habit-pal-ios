@@ -33,7 +33,7 @@
 		BBB3E2A52BAC452500257FEC /* Border+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A42BAC452500257FEC /* Border+Extension.swift */; };
 		BBB3E2A72BAC458B00257FEC /* ButtonDisplay+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A62BAC458B00257FEC /* ButtonDisplay+Extension.swift */; };
 		BBF8FDDB2BB05ECE003CF597 /* Plate+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */; };
-		BBF8FDDD2BB06097003CF597 /* UIKit+Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDC2BB06097003CF597 /* UIKit+Haptics.swift */; };
+		BBF8FDDD2BB06097003CF597 /* UIKit+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDC2BB06097003CF597 /* UIKit+App.swift */; };
 		BBF8FDDF2BB060F7003CF597 /* HabitDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDDE2BB060F7003CF597 /* HabitDataSource.swift */; };
 		BBF8FDE12BB074CC003CF597 /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDE02BB074CC003CF597 /* Button+Extension.swift */; };
 		BBF8FDE32BB0792C003CF597 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8FDE22BB0792C003CF597 /* NavigationView.swift */; };
@@ -84,7 +84,7 @@
 		BBB3E2A42BAC452500257FEC /* Border+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Border+Extension.swift"; sourceTree = "<group>"; };
 		BBB3E2A62BAC458B00257FEC /* ButtonDisplay+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonDisplay+Extension.swift"; sourceTree = "<group>"; };
 		BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plate+App.swift"; sourceTree = "<group>"; };
-		BBF8FDDC2BB06097003CF597 /* UIKit+Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Haptics.swift"; sourceTree = "<group>"; };
+		BBF8FDDC2BB06097003CF597 /* UIKit+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+App.swift"; sourceTree = "<group>"; };
 		BBF8FDDE2BB060F7003CF597 /* HabitDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDataSource.swift; sourceTree = "<group>"; };
 		BBF8FDE02BB074CC003CF597 /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
 		BBF8FDE22BB0792C003CF597 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
@@ -234,7 +234,7 @@
 				BB1028992BAC579A00C17BA5 /* String+Font.swift */,
 				BB5DC8F22BADA96600859613 /* Content+App.swift */,
 				BBF8FDDA2BB05ECE003CF597 /* Plate+App.swift */,
-				BBF8FDDC2BB06097003CF597 /* UIKit+Haptics.swift */,
+				BBF8FDDC2BB06097003CF597 /* UIKit+App.swift */,
 				BB5DC8F42BADBD3900859613 /* ColorScheme.swift */,
 			);
 			path = Extension;
@@ -413,7 +413,7 @@
 				BB5DC8F32BADA96600859613 /* Content+App.swift in Sources */,
 				BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */,
 				BBB3E2A52BAC452500257FEC /* Border+Extension.swift in Sources */,
-				BBF8FDDD2BB06097003CF597 /* UIKit+Haptics.swift in Sources */,
+				BBF8FDDD2BB06097003CF597 /* UIKit+App.swift in Sources */,
 				BB10289A2BAC579A00C17BA5 /* String+Font.swift in Sources */,
 				BB10289E2BAC5ECC00C17BA5 /* AddHabitView.swift in Sources */,
 				BB1028A62BAC86B100C17BA5 /* SettingsView.swift in Sources */,

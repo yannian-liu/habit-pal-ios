@@ -23,11 +23,20 @@ struct AddHabitView: View {
                         isPresented: $viewModel.isEmojiPickerShown,
                         selectedEmoji: $viewModel.emoji
                     )
+                
             }
+            
+            Spacer().frame(height: 16)
+            
+            TextField("Please enter the title", text: $viewModel.title)
+                .textFieldDisplay(viewModel.titleTextField)
             
         }
         .background(.backgroundPrimary)
         .contentMargins(.all, 16)
+        .scrollDismissesKeyboard(.automatic)
+        .onTapGesture(perform: UIApplication.dismissKeyboard)
+
     }
 }
 
