@@ -8,6 +8,7 @@
 import Foundation
 import UIToolbox
 import SwiftUI
+import MCEmojiPicker
 
 struct AddHabitView: View {
     @ObservedObject var viewModel: AddHabitViewModel
@@ -18,6 +19,10 @@ struct AddHabitView: View {
             
             ZStack {
                 StatableButtonView(configuration: viewModel.emojiButton)
+                    .emojiPicker(
+                        isPresented: $viewModel.isEmojiPickerShown,
+                        selectedEmoji: $viewModel.emoji
+                    )
             }
             
         }

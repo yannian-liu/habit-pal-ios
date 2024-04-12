@@ -1,5 +1,5 @@
 {
-  "originHash" : "023cb5139d8e42e132310434ae8463c63d0dcf1cea3c70b0d0910c9cbc6aad35",
+  "originHash" : "eef0a929735cd6511f6de259d2e8858382cc57f644eb0d24c5ada522c10f4b3f",
   "pins" : [
     {
       "identity" : "ios-ui-toolbox",
@@ -8,6 +8,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "a987456d5778a28b911dc0be5c2c398daac24853"
+      }
+    },
+    {
+      "identity" : "mcemojipicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/izyumkin/MCEmojiPicker",
+      "state" : {
+        "revision" : "e0b4903b75ae1cc418d276d84d1cb946b8a1d73c",
+        "version" : "1.2.3"
       }
     }
   ],

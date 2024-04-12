@@ -26,6 +26,7 @@
 		BB5DC8F52BADBD3900859613 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8F42BADBD3900859613 /* ColorScheme.swift */; };
 		BB5DC8FB2BAFF87F00859613 /* HabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8FA2BAFF87F00859613 /* HabitCell.swift */; };
 		BB5DC8FD2BAFF88D00859613 /* HabitCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8FC2BAFF88D00859613 /* HabitCellConfiguration.swift */; };
+		BB93B6372BC965E5003E899A /* MCEmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = BB93B6362BC965E5003E899A /* MCEmojiPicker */; };
 		BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */; };
 		BBB3E29F2BAC40F700257FEC /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = BBB3E29E2BAC40F700257FEC /* UIToolbox */; };
 		BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */; };
@@ -95,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBB3E29F2BAC40F700257FEC /* UIToolbox in Frameworks */,
+				BB93B6372BC965E5003E899A /* MCEmojiPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +276,7 @@
 			name = "habit-pal-ios";
 			packageProductDependencies = (
 				BBB3E29E2BAC40F700257FEC /* UIToolbox */,
+				BB93B6362BC965E5003E899A /* MCEmojiPicker */,
 			);
 			productName = "habit-pal-ios";
 			productReference = BB3C78322BAB381600D49B3E /* habit-pal-ios.app */;
@@ -349,6 +352,7 @@
 			mainGroup = BB3C78292BAB381600D49B3E;
 			packageReferences = (
 				BBB3E29C2BAC40D100257FEC /* XCRemoteSwiftPackageReference "ios-ui-toolbox" */,
+				BB93B6352BC965E5003E899A /* XCRemoteSwiftPackageReference "MCEmojiPicker" */,
 			);
 			productRefGroup = BB3C78332BAB381600D49B3E /* Products */;
 			projectDirPath = "";
@@ -748,6 +752,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BB93B6352BC965E5003E899A /* XCRemoteSwiftPackageReference "MCEmojiPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/izyumkin/MCEmojiPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.3;
+			};
+		};
 		BBB3E29C2BAC40D100257FEC /* XCRemoteSwiftPackageReference "ios-ui-toolbox" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/yannian-liu/ios-ui-toolbox/";
@@ -759,6 +771,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BB93B6362BC965E5003E899A /* MCEmojiPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB93B6352BC965E5003E899A /* XCRemoteSwiftPackageReference "MCEmojiPicker" */;
+			productName = MCEmojiPicker;
+		};
 		BBB3E29E2BAC40F700257FEC /* UIToolbox */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BBB3E29C2BAC40D100257FEC /* XCRemoteSwiftPackageReference "ios-ui-toolbox" */;

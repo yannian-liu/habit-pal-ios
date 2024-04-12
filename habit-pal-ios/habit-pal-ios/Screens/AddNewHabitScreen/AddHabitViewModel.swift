@@ -21,8 +21,8 @@ class AddHabitViewModel: ObservableObject {
     }
         
     @Published var emojiButton: EmojiButton!
-    
-    @Published private var emoji = "💧"
+    @Published var isEmojiPickerShown = false
+    @Published var emoji = "💧"
 
     init(habitsViewModel: HabitsViewModel) {
         self.habitsViewModel = habitsViewModel
@@ -43,7 +43,7 @@ class AddHabitViewModel: ObservableObject {
             animation: .scale,
             statePublisher: nil,
             action: { [unowned self] in
-                
+                isEmojiPickerShown.toggle()
             }
         )
     }
