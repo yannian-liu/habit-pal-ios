@@ -19,31 +19,21 @@ class AddHabitViewModel: ObservableObject {
     public lazy var navigationConfiguration = NavigationViewConfiguration(title: "Add a Habit") { [unowned self] in
             habitsViewModel.shouldShowAddHabitView = false
     }
-    
-    public var emojiTextField = OneCharTextFieldViewConfiguration(
-        contentDisplay: .emoji,
-        plateDisplay: .emojiForDetail(plateColor: .clear),
-        accentColor: .clear,
-        isSelectionDisabled: true,
-        keepPrefixWhenTypeOnFull: false,
-        statePublisher: nil,
-        tag: 0
-    )
         
     @Published var emojiButton: EmojiButton!
+    
+    @Published private var emoji = "💧"
 
     init(habitsViewModel: HabitsViewModel) {
         self.habitsViewModel = habitsViewModel
     
-        emojiTextField.textFieldViewConfiguration.$text
-            .dropFirst()
-            .prepend("💧")
+        $emoji
             .map { [unowned self] in
                 makeEmojiButton(with: $0)
             }
             .assign(to: &$emojiButton)
     }
-
+    
     private func makeEmojiButton(with text: String) -> EmojiButton {
         StatableButtonViewConfiguration(
             content: Text(text),
@@ -53,7 +43,7 @@ class AddHabitViewModel: ObservableObject {
             animation: .scale,
             statePublisher: nil,
             action: { [unowned self] in
-                emojiTextField.textFieldViewConfiguration.becomeFocus()
+                
             }
         )
     }

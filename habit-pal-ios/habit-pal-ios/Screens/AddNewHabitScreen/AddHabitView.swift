@@ -17,7 +17,6 @@ struct AddHabitView: View {
             NavigationView(configuration: viewModel.navigationConfiguration)
             
             ZStack {
-                OneCharTextFieldView(configuration: viewModel.emojiTextField)
                 StatableButtonView(configuration: viewModel.emojiButton)
             }
             
