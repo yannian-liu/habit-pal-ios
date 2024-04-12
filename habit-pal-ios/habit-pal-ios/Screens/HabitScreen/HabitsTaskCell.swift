@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 import UIToolbox
 
-struct HabitCell: View {
+struct HabitsTaskCell: View {
     
-    let configuration: HabitCellConfiguration
+    let configuration: HabitsTaskCellConfiguration
     
     var body: some View {
         VStack {

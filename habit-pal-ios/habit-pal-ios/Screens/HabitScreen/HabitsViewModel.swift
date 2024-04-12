@@ -13,7 +13,7 @@ import SwiftUI
 class HabitsViewModel: ObservableObject {
     @Published public var shouldShowAddHabitView = false
     @Published public var shouldShowSettings = false
-    @Published public var habitConfigurations = [HabitCellConfiguration]()
+    @Published public var cellConfigurations = [HabitsTaskCellConfiguration]()
     
     public var todayTextConfiguration = TextViewConfiguration(title: "Today is 22nd May", contentDisplay: .body, plateDisplay: nil)
     
@@ -52,8 +52,8 @@ class HabitsViewModel: ObservableObject {
         self.dataSource = dataSource
         self.dataSource.$habits
             .sink(receiveValue: { [unowned self] habits in
-                habitConfigurations = habits.map { habit in
-                    HabitCellConfiguration(habit: habit)
+                cellConfigurations = habits.map { habit in
+                    HabitsTaskCellConfiguration(habit: habit)
                 }
             })
             .store(in: &subscribes)

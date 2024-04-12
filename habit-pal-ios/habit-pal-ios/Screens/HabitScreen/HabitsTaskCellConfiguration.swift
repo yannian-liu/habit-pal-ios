@@ -9,7 +9,7 @@ import Foundation
 import UIToolbox
 import SwiftUI
 
-class HabitCellConfiguration {
+class HabitsTaskCellConfiguration {
     
     private(set) var habit: Habit
     @Published private var isCompletedToday: Bool
@@ -42,7 +42,7 @@ class HabitCellConfiguration {
     
 }
 
-extension HabitCellConfiguration: Hashable {
+extension HabitsTaskCellConfiguration: Hashable {
     var identifier: String {
         return String(habit.id)
     }
@@ -51,7 +51,7 @@ extension HabitCellConfiguration: Hashable {
         return hasher.combine(identifier)
     }
     
-    static func == (lhs: HabitCellConfiguration, rhs: HabitCellConfiguration) -> Bool {
+    static func == (lhs: HabitsTaskCellConfiguration, rhs: HabitsTaskCellConfiguration) -> Bool {
         lhs.habit.id == rhs.habit.id
     }
     

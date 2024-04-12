@@ -48,8 +48,8 @@ struct HabitsView: View {
                 
             } else {
                 LazyVGrid(columns: columns, spacing: 16) {
-                    ForEach(viewModel.habitConfigurations, id: \.self) { configuration in
-                        HabitCell(configuration: configuration)
+                    ForEach(viewModel.cellConfigurations, id: \.self) { configuration in
+                        HabitsTaskCell(configuration: configuration)
                     }
                 }
                 .plateDisplay(.card)
