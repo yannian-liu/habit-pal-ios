@@ -11,7 +11,7 @@ import UIToolbox
 
 struct ColorPickerView: View {
     
-    @ObservedObject var configuration = ColorPickerViewConfiguration()
+    @ObservedObject var configuration: ColorPickerViewConfiguration
     
     let columns = [
         GridItem(.adaptive(minimum: 36, maximum: 100), alignment: .top)
@@ -27,8 +27,4 @@ struct ColorPickerView: View {
         }
         .plateDisplay(.card)
     }
-}
-
-#Preview {
-    ColorPickerView()
 }

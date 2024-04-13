@@ -29,6 +29,8 @@ class AddHabitViewModel: ObservableObject {
     public lazy var titleTextField = TextFieldDisplay(contentDisplay: .headerCentred, plateDisplay: .input, accentColor: .appColorMediumOrange)
     @Published var title: String = ""
     
+    @Published var colorPicker = ColorPickerViewConfiguration()
+    
     // MARK: - Private Properties
 
     @ObservedObject private var habitsViewModel: HabitsViewModel
@@ -38,19 +40,23 @@ class AddHabitViewModel: ObservableObject {
     init(habitsViewModel: HabitsViewModel) {
         self.habitsViewModel = habitsViewModel
     
-        $emoji
-            .map { [unowned self] in
-                makeEmojiButton(with: $0)
-            }
-            .assign(to: &$emojiButton)
+        Publishers.CombineLatest(
+            $emoji.eraseToAnyPublisher(),
+            colorPicker.$selected.eraseToAnyPublisher()
+        )
+        .map { [unowned self] emoji, color in
+            makeEmojiButton(emoji: emoji, color: color)
+        }
+        .assign(to: &$emojiButton)
+         
     }
     
     // MARK: - Private Methods
 
-    private func makeEmojiButton(with text: String) -> EmojiButton {
+    private func makeEmojiButton(emoji: String, color: Color) -> EmojiButton {
         StatableButtonViewConfiguration(
-            content: Text(text),
-            activeDisplay: .emojiForDetail(plateColor: .blue),
+            content: Text(emoji),
+            activeDisplay: .emojiForDetail(plateColor: color),
             disabledDisplay: nil,
             highlightedDisplay: nil,
             animation: .scale,
