@@ -26,7 +26,7 @@ class AddHabitViewModel: ObservableObject {
     @Published public var isEmojiPickerShown = false
     @Published public var emoji = "💧"
     
-    public lazy var titleTextField = TextFieldDisplay(contentDisplay: .headerCentred, plateDisplay: .input, accentColor: .appColorMediumOrange)
+    public lazy var titleTextField = TextFieldDisplay(contentDisplay: .bodyCentred, plateDisplay: .input, accentColor: .appColorMediumOrange)
     @Published var title: String = ""
     
     @Published var colorPicker = ColorPickerViewConfiguration()
