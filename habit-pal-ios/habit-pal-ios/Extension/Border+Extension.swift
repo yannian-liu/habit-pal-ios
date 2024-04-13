@@ -13,5 +13,5 @@ extension PlateDisplay.Border {
     
     static let primary: Self = .primary(.buttonPrimaryBackground)
     
-    static func primary(_ color: Color) -> Self { .init(width: 1, dash: [], color: color, gap: 0) }
+    static func primary(_ color: Color) -> Self { .init(width: 1.5, dash: [], color: color, gap: 0) }
 }

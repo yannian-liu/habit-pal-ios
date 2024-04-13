@@ -27,6 +27,8 @@
 		BB5DC8FB2BAFF87F00859613 /* HabitsTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8FA2BAFF87F00859613 /* HabitsTaskCell.swift */; };
 		BB5DC8FD2BAFF88D00859613 /* HabitsTaskCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5DC8FC2BAFF88D00859613 /* HabitsTaskCellConfiguration.swift */; };
 		BB93B6372BC965E5003E899A /* MCEmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = BB93B6362BC965E5003E899A /* MCEmojiPicker */; };
+		BB93B6392BCA9F17003E899A /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93B6382BCA9F17003E899A /* ColorPickerView.swift */; };
+		BB93B63B2BCA9F2D003E899A /* ColorPickerViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93B63A2BCA9F2D003E899A /* ColorPickerViewConfiguration.swift */; };
 		BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */; };
 		BBB3E29F2BAC40F700257FEC /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = BBB3E29E2BAC40F700257FEC /* UIToolbox */; };
 		BBB3E2A12BAC411F00257FEC /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */; };
@@ -79,6 +81,8 @@
 		BB5DC8F42BADBD3900859613 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		BB5DC8FA2BAFF87F00859613 /* HabitsTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTaskCell.swift; sourceTree = "<group>"; };
 		BB5DC8FC2BAFF88D00859613 /* HabitsTaskCellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTaskCellConfiguration.swift; sourceTree = "<group>"; };
+		BB93B6382BCA9F17003E899A /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		BB93B63A2BCA9F2D003E899A /* ColorPickerViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewConfiguration.swift; sourceTree = "<group>"; };
 		BBB3E29A2BAC3CF000257FEC /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		BBB3E2A02BAC411F00257FEC /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
 		BBB3E2A42BAC452500257FEC /* Border+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Border+Extension.swift"; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 			children = (
 				BB10289D2BAC5ECC00C17BA5 /* AddHabitView.swift */,
 				BB10289F2BAC5EE700C17BA5 /* AddHabitViewModel.swift */,
+				BB93B6382BCA9F17003E899A /* ColorPickerView.swift */,
+				BB93B63A2BCA9F2D003E899A /* ColorPickerViewConfiguration.swift */,
 			);
 			path = AddNewHabitScreen;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				BBB3E2A72BAC458B00257FEC /* ButtonDisplay+Extension.swift in Sources */,
 				BBF8FDDF2BB060F7003CF597 /* HabitDataSource.swift in Sources */,
 				BB10289C2BAC5D9D00C17BA5 /* Group.swift in Sources */,
+				BB93B6392BCA9F17003E899A /* ColorPickerView.swift in Sources */,
 				BB1028982BAC501D00C17BA5 /* String+Emoji.swift in Sources */,
 				BBF8FDDB2BB05ECE003CF597 /* Plate+App.swift in Sources */,
 				BB3C783A2BAB381600D49B3E /* Habit.swift in Sources */,
@@ -412,6 +419,7 @@
 				BB3C78362BAB381600D49B3E /* habit_pal_iosApp.swift in Sources */,
 				BB5DC8F32BADA96600859613 /* Content+App.swift in Sources */,
 				BBB3E29B2BAC3CF000257FEC /* Color+Extension.swift in Sources */,
+				BB93B63B2BCA9F2D003E899A /* ColorPickerViewConfiguration.swift in Sources */,
 				BBB3E2A52BAC452500257FEC /* Border+Extension.swift in Sources */,
 				BBF8FDDD2BB06097003CF597 /* UIKit+App.swift in Sources */,
 				BB10289A2BAC579A00C17BA5 /* String+Font.swift in Sources */,

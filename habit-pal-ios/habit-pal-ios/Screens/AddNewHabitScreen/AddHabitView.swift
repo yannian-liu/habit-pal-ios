@@ -31,6 +31,11 @@ struct AddHabitView: View {
             TextField("Please enter the title", text: $viewModel.title)
                 .textFieldDisplay(viewModel.titleTextField)
             
+            Spacer().frame(height: 16)
+            
+            ColorPickerView()
+                .plateDisplay(.card)
+            
         }
         .background(.backgroundPrimary)
         .contentMargins(.all, 16)
