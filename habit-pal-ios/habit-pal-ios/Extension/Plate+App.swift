@@ -18,11 +18,11 @@ extension PlateDisplay {
     )
     
     static func emojiIncompleted(plateColor: Color) -> Self {
-        .init(sizeStyle: .paddingDefault, color: plateColor.opacity(0.2), shape: .circle, border: .primary(plateColor))
+        .init(sizeStyle: .paddingDefault, color: plateColor.opacity(0.2), shape: .circle, border: .thin(plateColor))
     }
     
     static func emojiCompleted(plateColor: Color) -> Self {
-        .init(sizeStyle: .paddingDefault, color: plateColor, shape: .circle, border: .primary(plateColor))
+        .init(sizeStyle: .paddingDefault, color: plateColor, shape: .circle, border: .thin(plateColor))
     }
 
     static func emojiForDetail(plateColor: Color) -> Self {
