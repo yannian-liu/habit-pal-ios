@@ -44,8 +44,8 @@ class AddHabitViewModel: ObservableObject {
             $emoji.eraseToAnyPublisher(),
             colorPicker.$selected.eraseToAnyPublisher()
         )
-        .map { [unowned self] emoji, color in
-            makeEmojiButton(emoji: emoji, color: color)
+        .map { [unowned self] emoji, hex in
+            makeEmojiButton(emoji: emoji, hex: hex)
         }
         .assign(to: &$emojiButton)
          
@@ -53,10 +53,10 @@ class AddHabitViewModel: ObservableObject {
     
     // MARK: - Private Methods
 
-    private func makeEmojiButton(emoji: String, color: Color) -> EmojiButton {
+    private func makeEmojiButton(emoji: String, hex: String) -> EmojiButton {
         StatableButtonViewConfiguration(
             content: Text(emoji),
-            activeDisplay: .emojiForDetail(plateColor: color),
+            activeDisplay: .emojiForDetail(plateColor: Color(hex: hex)),
             disabledDisplay: nil,
             highlightedDisplay: nil,
             animation: .scale,

@@ -13,39 +13,64 @@ import UIToolbox
 class ColorPickerViewConfiguration: ObservableObject {
         
     typealias ButtonConfiguration = StatableButtonViewConfiguration<Circle>
-    @Published public var selected: Color = .blue
+    @Published public var selected: String = "60c3db"
     
     @Published public var cellConfigurations = [Tagged<ButtonConfiguration>]()
     
-    private var colors: [Color] = [.blue, .red, .green, .yellow, .purple, .orange, .pink, .black]
-    
+    private var defaultColorHexes: [String] = [
+        "60c3db",
+        "ffe38d",
+        "ffa1ac",
+        "ffab4d",
+        "006f3c",
+        "b0b8ce",
+        "eaebfe",
+        "7777aa",
+        "b8d3e8",
+        "d90c0f",
+        "eed9c4",
+        "6280ff",
+        "ff7400",
+        "cb9992",
+        "c79daf",
+        "d9ead3",
+        "fff2cc",
+        "f15152",
+        "8ebec4",
+        "f8aa9e",
+        "559f4c",
+        "7fbf7f",
+        "f19d52",
+    ]
+        
     init() {
-        cellConfigurations = colors.map { [unowned self] color in
+        cellConfigurations = defaultColorHexes
+            .map { [unowned self] hex in
             Tagged(
-                tag: color.hex,
+                tag: hex,
                 wrappedValue: StatableButtonViewConfiguration(
                     content: Circle(),
-                    activeDisplay: colorButtonDisplay(color: color, selected: false),
+                    activeDisplay: colorButtonDisplay(hex: hex, selected: false),
                     disabledDisplay: nil,
-                    highlightedDisplay: colorButtonDisplay(color: color, selected: true),
+                    highlightedDisplay: colorButtonDisplay(hex: hex, selected: true),
                     animation: .scale,
                     statePublisher: $selected.map { selected in
-                        selected.hex == color.hex ? .highlighted : .active
+                        selected == hex ? .highlighted : .active
                     }.eraseToAnyPublisher(),
                     action: { [unowned self] in
-                        select(color)
+                        select(hex)
                     }
                 )
             )
         }
     }
-    public func select(_ color: Color) {
-        selected = color
+    public func select(_ hex: String) {
+        selected = hex
     }
     
-    private func colorButtonDisplay(color: Color, selected: Bool) -> ButtonConfiguration.Display {
+    private func colorButtonDisplay(hex: String, selected: Bool) -> ButtonConfiguration.Display {
         .init(
-            contentDisplay: .init(font: .headline, color: color, multilineTextAlignment: .center),
+            contentDisplay: .init(font: .headline, color: Color(hex: hex), multilineTextAlignment: .center),
             plateDisplay: .init(sizeStyle: .padding(edgeInsets: .init(top: 5, leading: 5, bottom: 5, trailing: 5)), color: .clear, shape: .circle, border:  .primary(selected ? .buttonPrimaryBackground : .clear)))
     }
     
