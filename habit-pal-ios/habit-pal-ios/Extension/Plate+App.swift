@@ -30,6 +30,6 @@ extension PlateDisplay {
     }
     
     static let input: Self =
-        .init(sizeStyle: .padding(edgeInsets: .init(top: 12, leading: 12, bottom: 12, trailing: 12)), color: .inputBackground, shape: .rectangle(cornerRadius: 15), border: nil)
+        .init(sizeStyle: .padding(edgeInsets: .init(top: 12, leading: 12, bottom: 12, trailing: 12)), color: .cardBackground, shape: .rectangle(cornerRadius: 15), border: .primary(.buttonSecondaryBackground))
 
 }
