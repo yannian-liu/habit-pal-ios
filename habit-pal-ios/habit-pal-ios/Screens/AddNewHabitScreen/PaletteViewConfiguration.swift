@@ -1,5 +1,5 @@
 //
-//  ColorPickerViewConfiguration.swift
+//  PaletteViewConfiguration.swift
 //  habit-pal-ios
 //
 //  Created by Yannian Liu on 13/4/2024.
@@ -10,7 +10,7 @@ import Combine
 import SwiftUI
 import UIToolbox
 
-class ColorPickerViewConfiguration: ObservableObject {
+class PaletteViewConfiguration: ObservableObject {
         
     typealias ButtonConfiguration = StatableButtonViewConfiguration<Circle>
     @Published public var selected: String = "60c3db"

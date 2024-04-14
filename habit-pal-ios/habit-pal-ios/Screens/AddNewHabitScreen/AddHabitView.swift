@@ -33,7 +33,7 @@ struct AddHabitView: View {
             
             Spacer().frame(height: 16)
             
-            ColorPickerView(configuration: viewModel.colorPicker)
+            PaletteView(configuration: viewModel.colorPicker)
                 .plateDisplay(.card)
             
         }

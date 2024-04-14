@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 import UIToolbox
 
-struct ColorPickerView: View {
+struct PaletteView: View {
     
-    @ObservedObject var configuration: ColorPickerViewConfiguration
+    @ObservedObject var configuration: PaletteViewConfiguration
     
     let columns = [
         GridItem(.adaptive(minimum: 36, maximum: 100), alignment: .top)

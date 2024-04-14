@@ -29,7 +29,7 @@ class AddHabitViewModel: ObservableObject {
     public lazy var titleTextField = TextFieldDisplay(contentDisplay: .bodyCentred, plateDisplay: .input, accentColor: .appColorMediumOrange)
     @Published var title: String = ""
     
-    @Published var colorPicker = ColorPickerViewConfiguration()
+    @Published var colorPicker = PaletteViewConfiguration()
     
     // MARK: - Private Properties
 
