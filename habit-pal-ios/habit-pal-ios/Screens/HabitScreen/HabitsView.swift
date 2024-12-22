@@ -39,10 +39,10 @@ struct HabitsView: View {
             
             if viewModel.noHabits {
                 HStack {
-                    Spacer().frame(width: .infinity)
+                    Spacer()
                     TextView(textConfiguration: viewModel.emptyText)
                         .fixedSize(horizontal: true, vertical: true)
-                    Spacer().frame(width: .infinity)
+                    Spacer()
                 }
                 .plateDisplay(.card)
                 
